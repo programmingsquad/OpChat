@@ -18,7 +18,7 @@ namespace OPChat___Design
     {
 
 
-        chatbox2 current;
+        chatbox2 current = new chatbox2("a", "a");
 
         
         public screen(string userData)
@@ -80,7 +80,7 @@ namespace OPChat___Design
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-            current.refreshChat();
+           
         }
 
 
@@ -117,5 +117,9 @@ namespace OPChat___Design
             return html;
         }
 
+        private void timer2_Tick_1(object sender, EventArgs e)
+        {
+            current.refreshChat();
+        }
     }
 }
