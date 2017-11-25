@@ -81,6 +81,7 @@
             this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(720, 36);
             this.bunifuMaterialTextbox1.TabIndex = 0;
             this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bunifuMaterialTextbox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.bunifuMaterialTextbox1_KeyDown);
             // 
             // imageList1
             // 

@@ -18,20 +18,22 @@ namespace OPChat___Design
         string contactUser;
         chatbox2 chatbox;
         Boolean clicked = false;
+        screen parent;
 
-        public contact(string contactName, string contactUser, chatbox2 chatbox)
+        public contact(string contactName, string contactUser, chatbox2 chatbox, screen parent)
         {
             InitializeComponent();
             this.contactName = contactName;
             this.contactUser = contactUser;
             this.chatbox = chatbox;
+            this.parent = parent;
             this.chatbox.loadChat();
             btn.Text = this.contactName;
         }
 
-
-        
-       
-
+        private void btn_Click(object sender, EventArgs e)
+        {
+            parent.ChangeToChat(chatbox);
+        }
     }
 }

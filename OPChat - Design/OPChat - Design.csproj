@@ -109,6 +109,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="screen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="screen.Designer.cs">
+      <DependentUpon>screen.cs</DependentUpon>
+    </Compile>
     <Compile Include="SuccessfulRegister.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +157,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="screen.resx">
+      <DependentUpon>screen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SuccessfulRegister.resx">
       <DependentUpon>SuccessfulRegister.cs</DependentUpon>
     </EmbeddedResource>

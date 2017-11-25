@@ -81,6 +81,16 @@ namespace TestChat
 
         }
 
+        private void bunifuMaterialTextbox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                sendMessage(username, contact, bunifuMaterialTextbox1.Text);
+                bunifuMaterialTextbox1.Text = "";
+                refreshChat();
+            }
+        }
+
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
 
@@ -278,7 +288,7 @@ namespace TestChat
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.AutomaticDecompression = DecompressionMethods.GZip;
 
-            using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
+            using (     HttpWebResponse response = (HttpWebResponse)request.GetResponse())
             using (Stream stream = response.GetResponseStream())
             using (StreamReader reader = new StreamReader(stream))
             { html = reader.ReadToEnd(); }
@@ -286,8 +296,6 @@ namespace TestChat
             return html;
         }
 
-
-      
-
+        
     }
 }
