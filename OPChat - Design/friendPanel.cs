@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net;
 using System.IO;
+using TestChat;
 
 namespace OPChat___Design
 {
@@ -21,7 +22,7 @@ namespace OPChat___Design
             friendrequests.Visible = false;
         }
 
-        private void friendoptions_Click(object sender, EventArgs e)
+        public void friendoptions_Click(object sender, EventArgs e)
         {
             if (addfriends.Visible == false && friendrequests.Visible == false)
             {
@@ -35,7 +36,7 @@ namespace OPChat___Design
             }
         }
 
-        private void addfriends_Click(object sender, EventArgs e)
+        public void addfriends_Click(object sender, EventArgs e)
         {
             addfriends.Visible = false;
             friendrequests.Visible = false;
@@ -49,7 +50,7 @@ namespace OPChat___Design
             slideC.Refresh();
         }
 
-        private void friendrequests_Click(object sender, EventArgs e)
+        public void friendrequests_Click(object sender, EventArgs e)
         {
             addfriends.Visible = false;
             friendrequests.Visible = false;
@@ -63,7 +64,7 @@ namespace OPChat___Design
             slideB.Refresh();
         }
 
-        private void returnB_Click(object sender, EventArgs e)
+        public void returnB_Click(object sender, EventArgs e)
         {
             slideB.Visible = false;
             slideB.Left = 263;
@@ -74,7 +75,7 @@ namespace OPChat___Design
             slideA.Refresh();
         }
 
-        private void returnC_Click(object sender, EventArgs e)
+        public void returnC_Click(object sender, EventArgs e)
         {
             slideC.Visible = false;
             slideC.Left = 525;
@@ -103,8 +104,24 @@ namespace OPChat___Design
 
             return html;
         }
+         static chatbox2 porco  = new chatbox2("picha", "andre123aei"); //andre123aei
+        static contact teste = new contact("", "", porco);
+        static contact teste3 = new contact("", "", porco);
 
 
 
+        public void refresh() {
+            panel1.Controls.Add(teste);
+            teste.Dock = DockStyle.Top;
+
+            panel1.Controls.Add(teste3);
+            teste3.Dock = DockStyle.Top;
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+          
+        }
     }
 }

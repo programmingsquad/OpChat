@@ -330,7 +330,7 @@ namespace OPChat___Design
         public bool isValid2(string texto)
         {
 
-            string[] caractersInvalidos = { "@", "#", "$", "%", "_", "-", "+", "=", "|", " < ", ">", ":", ";", "," };
+            string[] caractersInvalidos = { "%", "+", "=", "|", ":", "{", "}", "[", "]" };
 
             foreach (String elemento in caractersInvalidos) { if (texto.Contains(elemento)) { return false; } }
 
@@ -406,6 +406,10 @@ namespace OPChat___Design
 
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

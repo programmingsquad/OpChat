@@ -34,6 +34,7 @@
             this.slideB = new System.Windows.Forms.Panel();
             this.returnB = new Bunifu.Framework.UI.BunifuImageButton();
             this.label2 = new System.Windows.Forms.Label();
+            this.friendRequest1 = new OPChat___Design.FriendRequest();
             this.addfriends = new Bunifu.Framework.UI.BunifuImageButton();
             this.friendrequests = new Bunifu.Framework.UI.BunifuImageButton();
             this.slideC = new System.Windows.Forms.Panel();
@@ -43,8 +44,7 @@
             this.bunifuImageButton4 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.slideA = new System.Windows.Forms.Panel();
-            this.contact1 = new OPChat___Design.contact();
-            this.friendRequest1 = new OPChat___Design.FriendRequest();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.friendoptions)).BeginInit();
             this.slideB.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.returnB)).BeginInit();
@@ -116,6 +116,14 @@
             this.label2.Size = new System.Drawing.Size(168, 17);
             this.label2.TabIndex = 20;
             this.label2.Text = "© 2017 ProgrammingSquad";
+            // 
+            // friendRequest1
+            // 
+            this.friendRequest1.BackColor = System.Drawing.Color.Transparent;
+            this.friendRequest1.Location = new System.Drawing.Point(0, -3);
+            this.friendRequest1.Name = "friendRequest1";
+            this.friendRequest1.Size = new System.Drawing.Size(265, 74);
+            this.friendRequest1.TabIndex = 0;
             // 
             // addfriends
             // 
@@ -228,27 +236,21 @@
             this.slideA.Controls.Add(this.friendrequests);
             this.slideA.Controls.Add(this.addfriends);
             this.slideA.Controls.Add(this.friendoptions);
-            this.slideA.Controls.Add(this.contact1);
             this.slideA.Controls.Add(this.label1);
+            this.slideA.Controls.Add(this.panel1);
             this.slideA.Location = new System.Drawing.Point(0, 0);
             this.slideA.Name = "slideA";
             this.slideA.Size = new System.Drawing.Size(262, 663);
             this.slideA.TabIndex = 26;
             // 
-            // contact1
+            // panel1
             // 
-            this.contact1.Location = new System.Drawing.Point(-2, -3);
-            this.contact1.Name = "contact1";
-            this.contact1.Size = new System.Drawing.Size(265, 74);
-            this.contact1.TabIndex = 20;
-            // 
-            // friendRequest1
-            // 
-            this.friendRequest1.BackColor = System.Drawing.Color.Transparent;
-            this.friendRequest1.Location = new System.Drawing.Point(0, -3);
-            this.friendRequest1.Name = "friendRequest1";
-            this.friendRequest1.Size = new System.Drawing.Size(265, 74);
-            this.friendRequest1.TabIndex = 0;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(262, 602);
+            this.panel1.TabIndex = 25;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // friendPanel
             // 
@@ -295,5 +297,6 @@
         private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuImageButton returnC;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel1;
     }
 }

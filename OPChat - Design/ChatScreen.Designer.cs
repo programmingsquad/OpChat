@@ -38,12 +38,10 @@
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.friendPanel1 = new OPChat___Design.friendPanel();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -161,20 +159,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel1.Controls.Add(this.friendPanel1);
             this.panel1.Location = new System.Drawing.Point(0, 72);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(265, 602);
             this.panel1.TabIndex = 5;
-            // 
-            // friendPanel1
-            // 
-            this.friendPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.friendPanel1.Location = new System.Drawing.Point(0, 0);
-            this.friendPanel1.Margin = new System.Windows.Forms.Padding(0);
-            this.friendPanel1.Name = "friendPanel1";
-            this.friendPanel1.Size = new System.Drawing.Size(262, 602);
-            this.friendPanel1.TabIndex = 0;
             // 
             // timer2
             // 
@@ -198,7 +186,6 @@
             this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -212,7 +199,6 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private System.Windows.Forms.Panel panel1;
-        private OPChat___Design.friendPanel friendPanel1;
         private System.Windows.Forms.Timer timer2;
     }
 }

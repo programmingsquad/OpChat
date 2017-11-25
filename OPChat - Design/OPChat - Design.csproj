@@ -65,12 +65,6 @@
     <Compile Include="bubble.Designer.cs">
       <DependentUpon>bubble.cs</DependentUpon>
     </Compile>
-    <Compile Include="chatbox.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="chatbox.Designer.cs">
-      <DependentUpon>chatbox.cs</DependentUpon>
-    </Compile>
     <Compile Include="chatbox2.cs">
       <SubType>UserControl</SubType>
     </Compile>

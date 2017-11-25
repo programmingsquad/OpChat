@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OPChat___Design;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,8 +15,8 @@ namespace TestChat
 {
     public partial class ChatScreen : Form
     {
-        chatbox2 teste2 = new chatbox2("andre123aei", "picha");
 
+        chatbox2 teste2 = new chatbox2("picha", "andre123aei"); //andre123aei
         public ChatScreen(string userData)
         {
 
@@ -31,7 +32,9 @@ namespace TestChat
             
 
             panel5.Controls.Add(teste2);
-
+            friendPanel friendP = new friendPanel();
+            panel1.Controls.Add(friendP);
+            friendP.refresh();
         }
         
 
