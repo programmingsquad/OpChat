@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TestChat;
 
+
 namespace OPChat___Design
 {
     public partial class contact : UserControl
@@ -16,6 +17,7 @@ namespace OPChat___Design
         string contactName;
         string contactUser;
         chatbox2 chatbox;
+        Boolean clicked = false;
 
         public contact(string contactName, string contactUser, chatbox2 chatbox)
         {
@@ -23,7 +25,13 @@ namespace OPChat___Design
             this.contactName = contactName;
             this.contactUser = contactUser;
             this.chatbox = chatbox;
+            this.chatbox.loadChat();
+            btn.Text = this.contactName;
         }
+
+
+        
+       
 
     }
 }

@@ -104,19 +104,13 @@ namespace OPChat___Design
 
             return html;
         }
-         static chatbox2 porco  = new chatbox2("picha", "andre123aei"); //andre123aei
-        static contact teste = new contact("", "", porco);
-        static contact teste3 = new contact("", "", porco);
+        
 
+        public void add(contact contactToAdd) {
+            panel1.Controls.Add(contactToAdd);
+            contactToAdd.Dock = DockStyle.Top;
 
-
-        public void refresh() {
-            panel1.Controls.Add(teste);
-            teste.Dock = DockStyle.Top;
-
-            panel1.Controls.Add(teste3);
-            teste3.Dock = DockStyle.Top;
-
+        
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
