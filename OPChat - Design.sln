@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2008
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OPChat - Design", "OPChat - Design\OPChat - Design.csproj", "{2CD66D17-C994-4606-8C90-5DD242FEE789}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2CD66D17-C994-4606-8C90-5DD242FEE789}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CD66D17-C994-4606-8C90-5DD242FEE789}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CD66D17-C994-4606-8C90-5DD242FEE789}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CD66D17-C994-4606-8C90-5DD242FEE789}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F695AD82-D666-43D1-B474-CFAED8EF30D2}
+	EndGlobalSection
+EndGlobal
