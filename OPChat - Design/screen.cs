@@ -16,8 +16,8 @@ namespace OPChat___Design
         public screen(string userData) {
 
             InitializeComponent();
-
-            friendPanel friendP = new friendPanel();           
+            string myUsername = Parse(userData, "Username");
+            friendPanel friendP = new friendPanel(myUsername);           
             List<string> contactUsernames = new List<string>();
             List<contact> contactss = new List<contact>();
             List<chatbox2> chats = new List<chatbox2>();
@@ -30,9 +30,11 @@ namespace OPChat___Design
 
             }
 
+            friendP.setList(contactUsernames);
+
             foreach (string contactUser in contactUsernames) {
 
-                chats.Add(new chatbox2(Parse(userData, "Username"), contactUser));
+                chats.Add(new chatbox2(myUsername, contactUser));
                 string contactData = getDataFromUser(contactUser);
                 contactss.Add(new contact("  " + Parse(contactData, "FirstName") + " " + Parse(contactData, "LastName"), contactUser, chats[chats.Count - 1], this));
                 friendP.add(contactss[contactss.Count - 1]);

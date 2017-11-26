@@ -25,6 +25,7 @@ namespace OPChat___Design
 
         private void btn_Click(object sender, EventArgs e)
         {
+            chatbox.scrollToBot();
             parent.ChangeToChat(chatbox);
         }
     }

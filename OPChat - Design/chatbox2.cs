@@ -48,7 +48,6 @@ namespace TestChat
 
         }
 
-
         public void addOut(string msg, string time)
         {
 
@@ -103,6 +102,7 @@ namespace TestChat
                     }
                 }
             }
+            scrollToBot();
         }
 
 
@@ -212,6 +212,12 @@ namespace TestChat
             using (Stream stream = response.GetResponseStream())
             using (StreamReader reader = new StreamReader(stream)) { html = reader.ReadToEnd(); }
             return html;
+
+        }
+
+        public void scrollToBot() {
+
+            panel2.VerticalScroll.Value = panel2.VerticalScroll.Maximum;
 
         }
 

@@ -34,7 +34,7 @@ namespace OPChat___Design
         //Set up loading
         public async Task Loading()
         {
-            await Task.Delay(4000);
+            await Task.Delay(1000);
         }
 
         //Sign up process 
