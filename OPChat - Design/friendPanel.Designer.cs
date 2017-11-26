@@ -32,6 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.friendoptions = new Bunifu.Framework.UI.BunifuImageButton();
             this.slideB = new System.Windows.Forms.Panel();
+            this.requestHolder = new System.Windows.Forms.Panel();
             this.returnB = new Bunifu.Framework.UI.BunifuImageButton();
             this.label2 = new System.Windows.Forms.Label();
             this.addfriends = new Bunifu.Framework.UI.BunifuImageButton();
@@ -44,7 +45,6 @@
             this.addUserTextBox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.slideA = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.requestHolder = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.friendoptions)).BeginInit();
             this.slideB.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.returnB)).BeginInit();
@@ -91,6 +91,14 @@
             this.slideB.Name = "slideB";
             this.slideB.Size = new System.Drawing.Size(263, 602);
             this.slideB.TabIndex = 22;
+            // 
+            // requestHolder
+            // 
+            this.requestHolder.AutoScroll = true;
+            this.requestHolder.Location = new System.Drawing.Point(1, 1);
+            this.requestHolder.Name = "requestHolder";
+            this.requestHolder.Size = new System.Drawing.Size(262, 527);
+            this.requestHolder.TabIndex = 25;
             // 
             // returnB
             // 
@@ -245,13 +253,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(246, 599);
             this.panel1.TabIndex = 25;
-            // 
-            // requestHolder
-            // 
-            this.requestHolder.Location = new System.Drawing.Point(1, 1);
-            this.requestHolder.Name = "requestHolder";
-            this.requestHolder.Size = new System.Drawing.Size(262, 527);
-            this.requestHolder.TabIndex = 25;
             // 
             // friendPanel
             // 

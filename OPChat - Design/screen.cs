@@ -26,7 +26,7 @@ namespace OPChat___Design
             for (int contactNumber = 5; contactNumber > 0; contactNumber--) {
 
                 string newcontact = Parse(userData, "Friend" + contactNumber);
-                if (newcontact != "") { contactUsernames.Add(Parse(getDataFromUser(newcontact), "Username")); }
+                if (newcontact != "") { contactUsernames.Add(newcontact); }
 
             }
 
