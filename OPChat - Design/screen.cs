@@ -12,15 +12,18 @@ namespace OPChat___Design
     {
 
         chatbox2 current = new chatbox2();
-        
+       
+        List<string> contactUsernames = new List<string>();
+        List<contact> contactss = new List<contact>();
+        List<chatbox2> chats = new List<chatbox2>();
+        friendPanel friendP;
+
+
         public screen(string userData) {
 
             InitializeComponent();
             string myUsername = Parse(userData, "Username");
-            friendPanel friendP = new friendPanel(myUsername);           
-            List<string> contactUsernames = new List<string>();
-            List<contact> contactss = new List<contact>();
-            List<chatbox2> chats = new List<chatbox2>();
+            friendP = new friendPanel(myUsername, this);
             panel1.Controls.Add(friendP);
 
             for (int contactNumber = 5; contactNumber > 0; contactNumber--) {
@@ -41,6 +44,15 @@ namespace OPChat___Design
                
             }
         }
+
+        public void addContactToPanel(string username, string name, string contactUsername) {
+
+            chats.Add(new chatbox2(username, contactUsername));
+            contactss.Add(new contact("  " + name, contactUsername, chats[chats.Count - 1], this));
+            friendP.add(contactss[contactss.Count - 1]);
+
+        }
+
 
         public void ChangeToChat(chatbox2 chatToShow)
         {

@@ -11,14 +11,15 @@ namespace OPChat___Design
     {
         string myUsername;
         List<string> contactUsernames;
+        screen parent;
 
-        public friendPanel(string myUsername )
+        public friendPanel(string myUsername, screen parent )
         {
             InitializeComponent();
             addfriends.Visible = false;
             friendrequests.Visible = false;
             this.myUsername = myUsername;
-            
+            this.parent = parent;
         }
 
         public void friendoptions_Click(object sender, EventArgs e)
@@ -310,6 +311,10 @@ namespace OPChat___Design
 
         addFriendInDb(user1, user2, placeToAddIn1);
         addFriendInDb(user2, user1, placeToAddIn2);
+
+        parent.addContactToPanel(myUsername, Parse(infoFrom2, "FirstName") + " " + Parse(infoFrom2, "LastName"), user2);
+
+
         return true;
 
         }
