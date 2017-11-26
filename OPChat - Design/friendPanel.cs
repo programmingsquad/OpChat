@@ -253,13 +253,16 @@ namespace OPChat___Design
         }
 
         List<FriendRequest> FriendRequests = new List<FriendRequest>();
+        List<string> FriendRequestsByUser = new List<string>();
+
 
         public void updateFriendRequests() {
 
             foreach (string request in ParseRqs(getRequestsTo(myUsername))) {
-
+                if (!FriendRequestsByUser.Contains(Parse(request, "fromm"))) { 
+                FriendRequestsByUser.Add(Parse(request, "fromm"));
                 FriendRequests.Add(new FriendRequest(myUsername, Parse(request, "fromm"), this));
-
+                }
             }
 
             foreach (FriendRequest request in FriendRequests) {

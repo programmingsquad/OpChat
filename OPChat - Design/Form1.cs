@@ -5,11 +5,15 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using TestChat;
+using System.Text;
+using System.Security.Cryptography;
 
 namespace OPChat___Design
 {
     public partial class login : Form
     {
+
+
         public login()
         {
             InitializeComponent();
@@ -386,7 +390,8 @@ namespace OPChat___Design
 
         }
 
-     
+       
+
     }
 }
 

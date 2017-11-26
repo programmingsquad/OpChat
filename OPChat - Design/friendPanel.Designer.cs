@@ -243,7 +243,7 @@
             this.slideA.Controls.Add(this.panel1);
             this.slideA.Location = new System.Drawing.Point(0, 0);
             this.slideA.Name = "slideA";
-            this.slideA.Size = new System.Drawing.Size(256, 663);
+            this.slideA.Size = new System.Drawing.Size(264, 663);
             this.slideA.TabIndex = 26;
             // 
             // panel1
@@ -251,7 +251,7 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(246, 599);
+            this.panel1.Size = new System.Drawing.Size(264, 602);
             this.panel1.TabIndex = 25;
             // 
             // friendPanel
@@ -264,7 +264,7 @@
             this.Controls.Add(this.slideB);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "friendPanel";
-            this.Size = new System.Drawing.Size(804, 602);
+            this.Size = new System.Drawing.Size(264, 602);
             ((System.ComponentModel.ISupportInitialize)(this.friendoptions)).EndInit();
             this.slideB.ResumeLayout(false);
             this.slideB.PerformLayout();
