@@ -123,35 +123,7 @@ namespace OPChat___Design
         //Not working
         private void AddButton_Click(object sender, EventArgs e)
         {
-            if (addUserTextBox.Text != "") {
-                if(getDataFromUser(addUserTextBox.Text) != "false") {
-
-                    if (canSendFriendRequest(addUserTextBox.Text))
-                    {
-
-                        if (sendFriendRequest(addUserTextBox.Text) == "easy")
-                        {
-                            addUserTextBox.Text = "";
-                            slideC.Visible = false;
-                            slideC.Left = 525;
-
-                            slideA.Visible = false;
-                            slideA.Left = 0;
-                            slideA.Visible = true;
-                            slideA.Refresh();
-
-                        }
-                        else
-                        {
-
-                            //erro de conexao ADD!
-
-                        }
-
-                    }
-                    else { /*ja sao amigos ou ja enviou pedido ou ja tem 5 amigos Erro ADDDDDD */}
-                }
-            }
+            
         }
 
 
@@ -341,6 +313,56 @@ namespace OPChat___Design
         {
            
         }
+
+        private void AddButton_Click_1(object sender, EventArgs e)
+        {
+            if (addUserTextBox.Text != "")
+            {
+                if (getDataFromUser(addUserTextBox.Text) != "false")
+                {
+
+                    if (canSendFriendRequest(addUserTextBox.Text))
+                    {
+
+                        if (sendFriendRequest(addUserTextBox.Text) == "easy")
+                        {
+                            addUserTextBox.Text = "";
+                            slideC.Visible = false;
+                            slideC.Left = 525;
+
+                            slideA.Visible = false;
+                            slideA.Left = 0;
+                            slideA.Visible = true;
+                            slideA.Refresh();
+
+                        }
+                        else
+                        {
+
+                            //erro de conexao ADD!
+                        }
+                    }
+                       }
+
+                  else { /*ja sao amigos ou ja enviou pedido ou ja tem 5 amigos Erro ADDDDDD */}
+                }
+            }
+
+        private void addUserTextBox_Enter_1(object sender, EventArgs e)
+        {
+            addUserTextBox.Text = "";
+        }
+
+        private void addUserTextBox_Leave_1(object sender, EventArgs e)
+        {
+            addUserTextBox.Text = "Add someone";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 
-}
+    }
+

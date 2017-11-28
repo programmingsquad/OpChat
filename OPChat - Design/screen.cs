@@ -17,7 +17,7 @@ namespace OPChat___Design
         List<contact> contactss = new List<contact>();
         List<chatbox2> chats = new List<chatbox2>();
         friendPanel friendP;
-        List<string> contactsAdded = new List<string>();
+     
 
         public screen(string userData) {
 
@@ -26,11 +26,6 @@ namespace OPChat___Design
             myUsername = Parse(userData, "Username");
             friendP = new friendPanel(myUsername, this);
             panel1.Controls.Add(friendP);
-            
-            refreshFriends();
-        }
-
-        public void refreshFriends() {
 
             for (int contactNumber = 5; contactNumber > 0; contactNumber--)
             {
@@ -44,24 +39,24 @@ namespace OPChat___Design
 
             foreach (string contactUser in contactUsernames)
             {
-                if (!contactsAdded.Contains(contactUser)) { 
+       
                 chats.Add(new chatbox2(myUsername, contactUser));
                 string contactData = getDataFromUser(contactUser);
                 contactss.Add(new contact("  " + Parse(contactData, "FirstName") + " " + Parse(contactData, "LastName"), contactUser, chats[chats.Count - 1], this));
                 friendP.add(contactss[contactss.Count - 1]);
-                    contactsAdded.Add(contactUser);
-            }
+             
             }
 
         }
 
-
+       
 
 
         public void addContactToPanel(string username, string name, string contactUsername) {
 
             chats.Add(new chatbox2(username, contactUsername));
             contactss.Add(new contact("  " + name, contactUsername, chats[chats.Count - 1], this));
+            contactUsernames.Add(contactUsername);
             friendP.add(contactss[contactss.Count - 1]);
 
         }
@@ -105,7 +100,46 @@ namespace OPChat___Design
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            refreshFriends();
+           updateFriendList();
         }
+
+
+        public void updateFriendList() {
+
+            string data = getDataFromUser(myUsername);
+            List<string> tempFriends = new List<string>();
+            
+
+            for (int contactNumber = 5; contactNumber > 0; contactNumber--)
+            {
+                string contact = Parse(data, "Friend" + contactNumber);
+                if (contact != "")
+                {
+                    tempFriends.Add(contact);
+
+                }                
+
+            }
+
+            foreach (string contactToVerify in tempFriends) {
+
+                if (!contactUsernames.Contains(contactToVerify))
+                {
+                    contactUsernames.Add(contactToVerify);
+                    chats.Add(new chatbox2(myUsername, contactToVerify));
+                    string contactData = getDataFromUser(contactToVerify);
+                    contactss.Add(new contact("  " + Parse(contactData, "FirstName") + " " + Parse(contactData, "LastName"), contactToVerify, chats[chats.Count - 1], this));
+                    friendP.add(contactss[contactss.Count - 1]);
+                }
+
+            }
+
+
+        }
+
+
+
+
+
     }
 }

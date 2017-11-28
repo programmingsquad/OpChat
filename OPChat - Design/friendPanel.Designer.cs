@@ -39,13 +39,13 @@
             this.addfriends = new Bunifu.Framework.UI.BunifuImageButton();
             this.friendrequests = new Bunifu.Framework.UI.BunifuImageButton();
             this.slideC = new System.Windows.Forms.Panel();
+            this.AddButton = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.addUserTextBox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.returnC = new Bunifu.Framework.UI.BunifuImageButton();
             this.label3 = new System.Windows.Forms.Label();
             this.slideA = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.addUserTextBox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.AddButton = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.friendoptions)).BeginInit();
             this.slideB.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.returnB)).BeginInit();
@@ -163,6 +163,54 @@
             this.slideC.Size = new System.Drawing.Size(263, 602);
             this.slideC.TabIndex = 25;
             // 
+            // AddButton
+            // 
+            this.AddButton.ActiveBorderThickness = 1;
+            this.AddButton.ActiveCornerRadius = 20;
+            this.AddButton.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
+            this.AddButton.ActiveForecolor = System.Drawing.Color.White;
+            this.AddButton.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.AddButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.AddButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AddButton.BackgroundImage")));
+            this.AddButton.ButtonText = "Add";
+            this.AddButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AddButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddButton.ForeColor = System.Drawing.Color.SeaGreen;
+            this.AddButton.IdleBorderThickness = 1;
+            this.AddButton.IdleCornerRadius = 20;
+            this.AddButton.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
+            this.AddButton.IdleForecolor = System.Drawing.Color.White;
+            this.AddButton.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
+            this.AddButton.Location = new System.Drawing.Point(77, 298);
+            this.AddButton.Margin = new System.Windows.Forms.Padding(5);
+            this.AddButton.Name = "AddButton";
+            this.AddButton.Size = new System.Drawing.Size(119, 48);
+            this.AddButton.TabIndex = 26;
+            this.AddButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.AddButton.Click += new System.EventHandler(this.AddButton_Click_1);
+            // 
+            // addUserTextBox
+            // 
+            this.addUserTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.addUserTextBox.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.addUserTextBox.ForeColor = System.Drawing.Color.DimGray;
+            this.addUserTextBox.HintForeColor = System.Drawing.Color.Empty;
+            this.addUserTextBox.HintText = "";
+            this.addUserTextBox.isPassword = false;
+            this.addUserTextBox.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(119)))), ((int)(((byte)(90)))));
+            this.addUserTextBox.LineIdleColor = System.Drawing.Color.Gray;
+            this.addUserTextBox.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(119)))), ((int)(((byte)(90)))));
+            this.addUserTextBox.LineThickness = 3;
+            this.addUserTextBox.Location = new System.Drawing.Point(20, 256);
+            this.addUserTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.addUserTextBox.Name = "addUserTextBox";
+            this.addUserTextBox.Size = new System.Drawing.Size(225, 33);
+            this.addUserTextBox.TabIndex = 25;
+            this.addUserTextBox.Text = "Add someone";
+            this.addUserTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.addUserTextBox.Enter += new System.EventHandler(this.addUserTextBox_Enter_1);
+            this.addUserTextBox.Leave += new System.EventHandler(this.addUserTextBox_Leave_1);
+            // 
             // returnC
             // 
             this.returnC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(119)))), ((int)(((byte)(90)))));
@@ -212,51 +260,6 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // addUserTextBox
-            // 
-            this.addUserTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.addUserTextBox.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.addUserTextBox.ForeColor = System.Drawing.Color.DimGray;
-            this.addUserTextBox.HintForeColor = System.Drawing.Color.Empty;
-            this.addUserTextBox.HintText = "";
-            this.addUserTextBox.isPassword = false;
-            this.addUserTextBox.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(119)))), ((int)(((byte)(90)))));
-            this.addUserTextBox.LineIdleColor = System.Drawing.Color.Gray;
-            this.addUserTextBox.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(119)))), ((int)(((byte)(90)))));
-            this.addUserTextBox.LineThickness = 3;
-            this.addUserTextBox.Location = new System.Drawing.Point(20, 256);
-            this.addUserTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.addUserTextBox.Name = "addUserTextBox";
-            this.addUserTextBox.Size = new System.Drawing.Size(225, 33);
-            this.addUserTextBox.TabIndex = 25;
-            this.addUserTextBox.Text = "Add someone";
-            this.addUserTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // AddButton
-            // 
-            this.AddButton.ActiveBorderThickness = 1;
-            this.AddButton.ActiveCornerRadius = 20;
-            this.AddButton.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
-            this.AddButton.ActiveForecolor = System.Drawing.Color.White;
-            this.AddButton.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.AddButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.AddButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AddButton.BackgroundImage")));
-            this.AddButton.ButtonText = "Add";
-            this.AddButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AddButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddButton.ForeColor = System.Drawing.Color.SeaGreen;
-            this.AddButton.IdleBorderThickness = 1;
-            this.AddButton.IdleCornerRadius = 20;
-            this.AddButton.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
-            this.AddButton.IdleForecolor = System.Drawing.Color.White;
-            this.AddButton.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
-            this.AddButton.Location = new System.Drawing.Point(77, 298);
-            this.AddButton.Margin = new System.Windows.Forms.Padding(5);
-            this.AddButton.Name = "AddButton";
-            this.AddButton.Size = new System.Drawing.Size(119, 48);
-            this.AddButton.TabIndex = 26;
-            this.AddButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // friendPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -267,7 +270,7 @@
             this.Controls.Add(this.slideB);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "friendPanel";
-            this.Size = new System.Drawing.Size(263, 602);
+            this.Size = new System.Drawing.Size(799, 602);
             ((System.ComponentModel.ISupportInitialize)(this.friendoptions)).EndInit();
             this.slideB.ResumeLayout(false);
             this.slideB.PerformLayout();
