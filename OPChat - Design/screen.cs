@@ -10,23 +10,30 @@ namespace OPChat___Design
 {
     public partial class screen : UserControl
     {
-
+        string userData;
         chatbox2 current = new chatbox2();
-       
+        string myUsername;
         List<string> contactUsernames = new List<string>();
         List<contact> contactss = new List<contact>();
         List<chatbox2> chats = new List<chatbox2>();
         friendPanel friendP;
-
+        List<string> contactsAdded = new List<string>();
 
         public screen(string userData) {
 
             InitializeComponent();
-            string myUsername = Parse(userData, "Username");
+            this.userData = userData;
+            myUsername = Parse(userData, "Username");
             friendP = new friendPanel(myUsername, this);
             panel1.Controls.Add(friendP);
+            
+            refreshFriends();
+        }
 
-            for (int contactNumber = 5; contactNumber > 0; contactNumber--) {
+        public void refreshFriends() {
+
+            for (int contactNumber = 5; contactNumber > 0; contactNumber--)
+            {
 
                 string newcontact = Parse(userData, "Friend" + contactNumber);
                 if (newcontact != "") { contactUsernames.Add(newcontact); }
@@ -35,15 +42,21 @@ namespace OPChat___Design
 
             friendP.setList(contactUsernames);
 
-            foreach (string contactUser in contactUsernames) {
-
+            foreach (string contactUser in contactUsernames)
+            {
+                if (!contactsAdded.Contains(contactUser)) { 
                 chats.Add(new chatbox2(myUsername, contactUser));
                 string contactData = getDataFromUser(contactUser);
                 contactss.Add(new contact("  " + Parse(contactData, "FirstName") + " " + Parse(contactData, "LastName"), contactUser, chats[chats.Count - 1], this));
                 friendP.add(contactss[contactss.Count - 1]);
-               
+                    contactsAdded.Add(contactUser);
             }
+            }
+
         }
+
+
+
 
         public void addContactToPanel(string username, string name, string contactUsername) {
 
@@ -75,7 +88,7 @@ namespace OPChat___Design
         public string getDataFromUser(string username) {
 
             string html = string.Empty;
-            string url = @"http://passarentrar.madeiratorres.com/opchat/public/index.php/api/user/" + username;
+            string url = @"http://passarentrar.madeiratorres.com/opchat/public/index.php/api/user/" + username.ToLower();
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.AutomaticDecompression = DecompressionMethods.GZip;
             using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
@@ -90,5 +103,9 @@ namespace OPChat___Design
             current.refreshChat();
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            refreshFriends();
+        }
     }
 }

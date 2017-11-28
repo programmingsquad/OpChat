@@ -128,3 +128,22 @@ C:\Users\Utilizador\Desktop\test\OPChat - Design\obj\Debug\OPChat - Design.pdb
 C:\Users\Utilizador\Desktop\test\OPChat - Design\bin\Debug\OPChat - Design.exe.config
 C:\Users\Utilizador\Desktop\test\OPChat - Design\bin\Debug\OPChat - Design.exe
 C:\Users\Utilizador\Desktop\test\OPChat - Design\bin\Debug\OPChat - Design.pdb
+C:\Users\instalar\Desktop\test\OPChat - Design\bin\Debug\OPChat - Design.exe.config
+C:\Users\instalar\Desktop\test\OPChat - Design\bin\Debug\OPChat - Design.exe
+C:\Users\instalar\Desktop\test\OPChat - Design\bin\Debug\OPChat - Design.pdb
+C:\Users\instalar\Desktop\test\OPChat - Design\obj\Debug\OPChat - Design.csprojResolveAssemblyReference.cache
+C:\Users\instalar\Desktop\test\OPChat - Design\obj\Debug\OPChat___Design.Alert.resources
+C:\Users\instalar\Desktop\test\OPChat - Design\obj\Debug\TestChat.bubble.resources
+C:\Users\instalar\Desktop\test\OPChat - Design\obj\Debug\TestChat.chatbox2.resources
+C:\Users\instalar\Desktop\test\OPChat - Design\obj\Debug\TestChat.ChatScreen.resources
+C:\Users\instalar\Desktop\test\OPChat - Design\obj\Debug\OPChat___Design.ConnectionIssues.resources
+C:\Users\instalar\Desktop\test\OPChat - Design\obj\Debug\OPChat___Design.contact.resources
+C:\Users\instalar\Desktop\test\OPChat - Design\obj\Debug\OPChat___Design.login.resources
+C:\Users\instalar\Desktop\test\OPChat - Design\obj\Debug\OPChat___Design.friendPanel.resources
+C:\Users\instalar\Desktop\test\OPChat - Design\obj\Debug\OPChat___Design.FriendRequest.resources
+C:\Users\instalar\Desktop\test\OPChat - Design\obj\Debug\OPChat___Design.Properties.Resources.resources
+C:\Users\instalar\Desktop\test\OPChat - Design\obj\Debug\OPChat___Design.screen.resources
+C:\Users\instalar\Desktop\test\OPChat - Design\obj\Debug\OPChat___Design.SuccessfulRegister.resources
+C:\Users\instalar\Desktop\test\OPChat - Design\obj\Debug\OPChat - Design.csproj.GenerateResource.Cache
+C:\Users\instalar\Desktop\test\OPChat - Design\obj\Debug\OPChat - Design.exe
+C:\Users\instalar\Desktop\test\OPChat - Design\obj\Debug\OPChat - Design.pdb

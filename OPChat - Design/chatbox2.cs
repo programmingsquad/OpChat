@@ -65,9 +65,12 @@ namespace TestChat
         {
             if (e.KeyCode == Keys.Enter)
             {
-                sendMessage(username, contact, bunifuMaterialTextbox1.Text);
-                bunifuMaterialTextbox1.Text = "";
-                refreshChat();
+                if (bunifuMaterialTextbox1.Text.Replace(" ", "") != "")
+                {
+                    sendMessage(username, contact, bunifuMaterialTextbox1.Text);
+                    bunifuMaterialTextbox1.Text = "";
+                    refreshChat(); 
+                }
             }
         }
 
@@ -75,9 +78,12 @@ namespace TestChat
         {
 
 
-            sendMessage(username, contact, bunifuMaterialTextbox1.Text);
-            bunifuMaterialTextbox1.Text = "";
-            refreshChat();
+            if (bunifuMaterialTextbox1.Text.Replace(" ", "") != "")
+            {
+                sendMessage(username, contact, bunifuMaterialTextbox1.Text);
+                bunifuMaterialTextbox1.Text = "";
+                refreshChat();
+            }
         }
 
         private void chatbox2_Load(object sender, EventArgs e) {
@@ -99,6 +105,7 @@ namespace TestChat
                     if (Parse(msgToRecieve, "fromm") == username) { addOut(Parse(msgToRecieve, "message"), GetDate(GetHour(msgToRecieve))); parts.Add(int.Parse(Parse(msgToRecieve, "id"))); }
                     else { addIn(Parse(msgToRecieve, "message"), GetDate(GetHour(msgToRecieve)));
                            parts.Add(int.Parse(Parse(msgToRecieve, "id")));
+                        recieveMsg(Parse(msgToRecieve, "id"));
                     }
                 }
             }
@@ -115,7 +122,7 @@ namespace TestChat
                     if (Parse(msgToRecieve, "fromm") == username) { addOut(Parse(msgToRecieve, "message"), GetDate(GetHour(msgToRecieve))); parts.Add(int.Parse(Parse(msgToRecieve, "id"))); }
                     else
                     {
-
+                        recieveMsg(Parse(msgToRecieve, "id"));
                         addIn(Parse(msgToRecieve, "message"), GetDate(GetHour(msgToRecieve)));
                         parts.Add(int.Parse(Parse(msgToRecieve, "id")));
                     }
@@ -130,7 +137,7 @@ namespace TestChat
         public string getMessages(string user1, string user2) {
 
             string html = string.Empty;
-            string url = String.Format(@"http://passarentrar.madeiratorres.com/opchat/public/index.php/api/messages/user1={0}/user2={1}", user1, user2);
+            string url = String.Format(@"http://passarentrar.madeiratorres.com/opchat/public/index.php/api/messages/user1={0}/user2={1}", user1.ToLower(), user2.ToLower());
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.AutomaticDecompression = DecompressionMethods.GZip;
             using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
@@ -140,10 +147,27 @@ namespace TestChat
 
         }
 
+        public void recieveMsg(string id) {
+
+
+            string html = string.Empty;
+            string url = @"http://passarentrar.madeiratorres.com/opchat/public/index.php/api/chat/recieve/" + id;
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+            request.AutomaticDecompression = DecompressionMethods.GZip;
+            using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
+            using (Stream stream = response.GetResponseStream())
+            using (StreamReader reader = new StreamReader(stream)) { html = reader.ReadToEnd(); }
+            
+
+
+        }
+
+       
+
         public string refreshMessages(string user1, string  user2) {
 
             string html = string.Empty;
-            string url = String.Format(@"http://passarentrar.madeiratorres.com/opchat/public/index.php/api/newmessages/user1={0}/user2={1}", user1, user2);
+            string url = String.Format(@"http://passarentrar.madeiratorres.com/opchat/public/index.php/api/newmessages/user1={0}/user2={1}", user1.ToLower(), user2.ToLower());
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.AutomaticDecompression = DecompressionMethods.GZip;
             using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
@@ -205,7 +229,7 @@ namespace TestChat
         public static string sendMessage(string from, string to, string message) {
 
             string html = string.Empty;
-            string url = String.Format(@"http://passarentrar.madeiratorres.com/opchat/public/index.php/api/chat/send/from={0}/to={1}/message={2}", from, to, message);
+            string url = String.Format(@"http://passarentrar.madeiratorres.com/opchat/public/index.php/api/chat/send/from={0}/to={1}/message={2}", from.ToLower(), to.ToLower(), message);
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.AutomaticDecompression = DecompressionMethods.GZip;
             using (     HttpWebResponse response = (HttpWebResponse)request.GetResponse())

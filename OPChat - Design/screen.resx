@@ -121,7 +121,7 @@
   <data name="bunifuImageButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1
-        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwABEJAAARCQAYms0rgAADEGSURBVHhe7d2Ndts6rkDh+/6v
+        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwABEI8AARCPAbZ2bGgAADEGSURBVHhe7d2Ndts6rkDh+/6v
         fDqda+WYHkDeSfxDmSC1u9a3EjpxCFKAwDhp+3///e9/JUnSyeCDkiRpbfigJElaGz74n//8R1rN34v/
         fuOnj/2E5pE0EeqBZ4EP0iZJBd0a958/f/5e3JrzNm7vF0JrkDQQ9cCzwAdpk6RBtkb+98+D36XHQ8Bk
         aO2SDkY98CzwQdok6UitwV/e3jXHiZt6D7hfkvqgHngW+CBtktTD1uD3Lo/rebi/kp5DPfAs8EHaJOkV
@@ -336,5 +336,8 @@
   </data>
   <metadata name="refreshTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>137, 17</value>
   </metadata>
 </root>

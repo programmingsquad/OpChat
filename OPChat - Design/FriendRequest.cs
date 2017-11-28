@@ -38,7 +38,7 @@ namespace OPChat___Design
         {
 
             string html = string.Empty;
-            string url = String.Format(@"http://passarentrar.madeiratorres.com/opchat/public/index.php/api/getrequesttodelete/from={0}/to={1}", from, to);
+            string url = String.Format(@"http://passarentrar.madeiratorres.com/opchat/public/index.php/api/getrequesttodelete/from={0}/to={1}", from.ToLower(), to.ToLower());
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.AutomaticDecompression = DecompressionMethods.GZip;
             using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())

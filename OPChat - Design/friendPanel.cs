@@ -120,8 +120,8 @@ namespace OPChat___Design
             addUserTextBox.Text = "";
         }
 
-
-        private void bunifuImageButton4_Click(object sender, EventArgs e)
+        //Not working
+        private void AddButton_Click(object sender, EventArgs e)
         {
             if (addUserTextBox.Text != "") {
                 if(getDataFromUser(addUserTextBox.Text) != "false") {
@@ -159,7 +159,7 @@ namespace OPChat___Design
         {
 
             string html = string.Empty;
-            string url = @"http://passarentrar.madeiratorres.com/opchat/public/index.php/api/user/" + username;
+            string url = @"http://passarentrar.madeiratorres.com/opchat/public/index.php/api/user/" + username.ToLower();
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.AutomaticDecompression = DecompressionMethods.GZip;
             using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
@@ -184,7 +184,7 @@ namespace OPChat___Design
         {
 
             string html = string.Empty;
-            string url = String.Format(@"http://passarentrar.madeiratorres.com/opchat/public/index.php/api/verifyfriendrequest/user1={0}/user2={1}", myUsername, contact);
+            string url = String.Format(@"http://passarentrar.madeiratorres.com/opchat/public/index.php/api/verifyfriendrequest/user1={0}/user2={1}", myUsername.ToLower(), contact.ToLower());
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.AutomaticDecompression = DecompressionMethods.GZip;
             using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
@@ -198,7 +198,7 @@ namespace OPChat___Design
         {
 
             string html = string.Empty;
-            string url = String.Format(@"http://passarentrar.madeiratorres.com/opchat/public/index.php/api/friendrequest/from={0}/to={1}", myUsername, contact);
+            string url = String.Format(@"http://passarentrar.madeiratorres.com/opchat/public/index.php/api/friendrequest/from={0}/to={1}", myUsername.ToLower(), contact.ToLower());
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.AutomaticDecompression = DecompressionMethods.GZip;
             using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
@@ -212,7 +212,7 @@ namespace OPChat___Design
         {
 
             string html = string.Empty;
-            string url = @"http://passarentrar.madeiratorres.com/opchat/public/index.php/api/getfriendrequests/to=" + user;
+            string url = @"http://passarentrar.madeiratorres.com/opchat/public/index.php/api/getfriendrequests/to=" + user.ToLower();
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.AutomaticDecompression = DecompressionMethods.GZip;
             using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
@@ -327,7 +327,7 @@ namespace OPChat___Design
         {
 
             string html = string.Empty;
-            string url = String.Format(@"http://passarentrar.madeiratorres.com/opchat/public/index.php/api/addfriend/user={0}/contact={1}/in={2}",user,contact, inn);
+            string url = String.Format(@"http://passarentrar.madeiratorres.com/opchat/public/index.php/api/addfriend/user={0}/contact={1}/in={2}",user.ToLower(), contact.ToLower(), inn);
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.AutomaticDecompression = DecompressionMethods.GZip;
             using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
@@ -337,7 +337,10 @@ namespace OPChat___Design
 
         }
 
-
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+           
+        }
     }
 
 }

@@ -229,7 +229,7 @@ namespace OPChat___Design
         {
 
             string html = string.Empty;
-            string url = string.Format(@"http://passarentrar.madeiratorres.com/opchat/public/index.php/api/user/add/firstName={0}/lastName={1}/user={2}/pass={3}", FirstName, LastName, Username, Password);
+            string url = string.Format(@"http://passarentrar.madeiratorres.com/opchat/public/index.php/api/user/add/firstName={0}/lastName={1}/user={2}/pass={3}", FirstName, LastName, Username.ToLower(), Password);
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.AutomaticDecompression = DecompressionMethods.GZip;
 
@@ -327,7 +327,7 @@ namespace OPChat___Design
         {
 
             string html = string.Empty;
-            string url = @"http://passarentrar.madeiratorres.com/opchat/public/index.php/api/user/" + Username2;
+            string url = @"http://passarentrar.madeiratorres.com/opchat/public/index.php/api/user/" + Username2.ToLower();
 
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.AutomaticDecompression = DecompressionMethods.GZip;
