@@ -18,6 +18,8 @@ namespace OPChat___Design
         List<chatbox2> chats = new List<chatbox2>();
         friendPanel friendP;
      
+      
+
 
         public screen(string userData) {
 

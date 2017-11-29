@@ -143,6 +143,7 @@ namespace OPChat___Design
 
 
         public Boolean canSendFriendRequest(string to) {
+
             if (contactUsernames.Count == 5) { return false; }
             if (myUsername == to) { return false; }
             if (verifyFriendRequest(to) != "[]") { return false; }

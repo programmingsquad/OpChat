@@ -195,3 +195,27 @@ C:\Users\Utilizador\Desktop\OpChat\OpChat\OPChat - Design\obj\Debug\OPChat - Des
 C:\Users\Utilizador\Desktop\OpChat\OpChat\OPChat - Design\obj\Debug\OPChat - Design.application
 C:\Users\Utilizador\Desktop\OpChat\OpChat\OPChat - Design\obj\Debug\OPChat - Design.exe
 C:\Users\Utilizador\Desktop\OpChat\OpChat\OPChat - Design\obj\Debug\OPChat - Design.pdb
+C:\Users\Utilizador\Desktop\opop\OPChat - Design\bin\Debug\OPChat - Design.exe.config
+C:\Users\Utilizador\Desktop\opop\OPChat - Design\bin\Debug\OPChat - Design.exe.manifest
+C:\Users\Utilizador\Desktop\opop\OPChat - Design\bin\Debug\OPChat - Design.application
+C:\Users\Utilizador\Desktop\opop\OPChat - Design\bin\Debug\OPChat - Design.exe
+C:\Users\Utilizador\Desktop\opop\OPChat - Design\bin\Debug\OPChat - Design.pdb
+C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\OPChat - Design.csprojResolveAssemblyReference.cache
+C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\OPChat___Design.Alert.resources
+C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\TestChat.bubble.resources
+C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\TestChat.chatbox2.resources
+C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\TestChat.ChatScreen.resources
+C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\OPChat___Design.ConnectionIssues.resources
+C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\OPChat___Design.contact.resources
+C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\OPChat___Design.login.resources
+C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\OPChat___Design.friendPanel.resources
+C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\OPChat___Design.FriendRequest.resources
+C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\OPChat___Design.Properties.Resources.resources
+C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\OPChat___Design.screen.resources
+C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\OPChat___Design.SuccessfulRegister.resources
+C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\OPChat - Design.csproj.GenerateResource.Cache
+C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\OPChat - Design.csproj.CoreCompileInputs.cache
+C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\OPChat - Design.exe.manifest
+C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\OPChat - Design.application
+C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\OPChat - Design.exe
+C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\OPChat - Design.pdb
