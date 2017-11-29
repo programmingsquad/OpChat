@@ -73,17 +73,17 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>lafX9xIoBXUACUhZfIjjev0CDd7Z/q1h4pPwCbMG1n8=</dsig:DigestValue>
+        <dsig:DigestValue>e8WsijBhgje5k8LVduX4q3L4uHfDZQkZIXrSuyLjQYU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="OPChat - Design.exe.config" size="184">
+  <file name="OPChat - Design.exe.config" size="189">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>gXPU0Xy3KObyxeLOgSTOfrD0WdxiCFvKq3hqvx9rN6c=</dsig:DigestValue>
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>
