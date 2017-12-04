@@ -37,6 +37,8 @@ namespace OPChat___Design
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.slideA = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.SignUp = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -133,6 +135,8 @@ namespace OPChat___Design
             // 
             // slideA
             // 
+            this.slideA.Controls.Add(this.label8);
+            this.slideA.Controls.Add(this.label7);
             this.slideA.Controls.Add(this.label5);
             this.slideA.Controls.Add(this.label2);
             this.slideA.Controls.Add(this.SignUp);
@@ -152,6 +156,32 @@ namespace OPChat___Design
             this.slideA.Size = new System.Drawing.Size(414, 437);
             this.slideA.TabIndex = 3;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.animator1.SetDecoration(this.label8, AnimatorNS.DecorationType.None);
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(0)))), ((int)(((byte)(19)))));
+            this.label8.Location = new System.Drawing.Point(200, 90);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(38, 17);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "ERRO";
+            this.label8.Visible = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.animator1.SetDecoration(this.label7, AnimatorNS.DecorationType.None);
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(0)))), ((int)(((byte)(19)))));
+            this.label7.Location = new System.Drawing.Point(31, 90);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(38, 17);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "ERRO";
+            this.label7.Visible = false;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -160,9 +190,10 @@ namespace OPChat___Design
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(0)))), ((int)(((byte)(19)))));
             this.label5.Location = new System.Drawing.Point(31, 294);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(143, 17);
+            this.label5.Size = new System.Drawing.Size(38, 17);
             this.label5.TabIndex = 14;
-            this.label5.Text = "Passwords don\'t match";
+            this.label5.Text = "ERRO";
+            this.label5.Visible = false;
             // 
             // label2
             // 
@@ -172,9 +203,10 @@ namespace OPChat___Design
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(0)))), ((int)(((byte)(19)))));
             this.label2.Location = new System.Drawing.Point(31, 191);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(152, 17);
+            this.label2.Size = new System.Drawing.Size(38, 17);
             this.label2.TabIndex = 13;
-            this.label2.Text = "Username already taken";
+            this.label2.Text = "ERRO";
+            this.label2.Visible = false;
             // 
             // SignUp
             // 
@@ -218,8 +250,10 @@ namespace OPChat___Design
             this.Username.Margin = new System.Windows.Forms.Padding(4);
             this.Username.Name = "Username";
             this.Username.Size = new System.Drawing.Size(345, 44);
-            this.Username.TabIndex = 11;
+            this.Username.TabIndex = 7;
             this.Username.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Username.OnValueChanged += new System.EventHandler(this.TextBox_TextChanged);
+            this.Username.KeyDown += new System.Windows.Forms.KeyEventHandler(this.bunifuThinButton23_KeyDown);
             // 
             // ConfirmPassword
             // 
@@ -236,8 +270,10 @@ namespace OPChat___Design
             this.ConfirmPassword.Margin = new System.Windows.Forms.Padding(4);
             this.ConfirmPassword.Name = "ConfirmPassword";
             this.ConfirmPassword.Size = new System.Drawing.Size(176, 44);
-            this.ConfirmPassword.TabIndex = 10;
+            this.ConfirmPassword.TabIndex = 9;
             this.ConfirmPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ConfirmPassword.OnValueChanged += new System.EventHandler(this.TextBox_TextChanged);
+            this.ConfirmPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.bunifuThinButton23_KeyDown);
             // 
             // Password
             // 
@@ -254,8 +290,10 @@ namespace OPChat___Design
             this.Password.Margin = new System.Windows.Forms.Padding(4);
             this.Password.Name = "Password";
             this.Password.Size = new System.Drawing.Size(147, 44);
-            this.Password.TabIndex = 9;
+            this.Password.TabIndex = 8;
             this.Password.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Password.OnValueChanged += new System.EventHandler(this.TextBox_TextChanged);
+            this.Password.KeyDown += new System.Windows.Forms.KeyEventHandler(this.bunifuThinButton23_KeyDown);
             // 
             // LastName
             // 
@@ -272,8 +310,10 @@ namespace OPChat___Design
             this.LastName.Margin = new System.Windows.Forms.Padding(4);
             this.LastName.Name = "LastName";
             this.LastName.Size = new System.Drawing.Size(176, 44);
-            this.LastName.TabIndex = 8;
+            this.LastName.TabIndex = 6;
             this.LastName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.LastName.OnValueChanged += new System.EventHandler(this.TextBox_TextChanged);
+            this.LastName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.bunifuThinButton23_KeyDown);
             // 
             // FirstName
             // 
@@ -290,8 +330,10 @@ namespace OPChat___Design
             this.FirstName.Margin = new System.Windows.Forms.Padding(4);
             this.FirstName.Name = "FirstName";
             this.FirstName.Size = new System.Drawing.Size(147, 44);
-            this.FirstName.TabIndex = 7;
+            this.FirstName.TabIndex = 5;
             this.FirstName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.FirstName.OnValueChanged += new System.EventHandler(this.TextBox_TextChanged);
+            this.FirstName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.bunifuThinButton23_KeyDown);
             // 
             // bunifuCustomLabel4
             // 
@@ -302,7 +344,7 @@ namespace OPChat___Design
             this.bunifuCustomLabel4.Location = new System.Drawing.Point(31, 225);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
             this.bunifuCustomLabel4.Size = new System.Drawing.Size(69, 17);
-            this.bunifuCustomLabel4.TabIndex = 6;
+            this.bunifuCustomLabel4.TabIndex = 3;
             this.bunifuCustomLabel4.Text = "Password";
             // 
             // bunifuCustomLabel2
@@ -314,7 +356,7 @@ namespace OPChat___Design
             this.bunifuCustomLabel2.Location = new System.Drawing.Point(200, 225);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
             this.bunifuCustomLabel2.Size = new System.Drawing.Size(125, 17);
-            this.bunifuCustomLabel2.TabIndex = 5;
+            this.bunifuCustomLabel2.TabIndex = 4;
             this.bunifuCustomLabel2.Text = "Confirm Password";
             // 
             // bunifuCustomLabel5
@@ -326,7 +368,7 @@ namespace OPChat___Design
             this.bunifuCustomLabel5.Location = new System.Drawing.Point(31, 122);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
             this.bunifuCustomLabel5.Size = new System.Drawing.Size(71, 17);
-            this.bunifuCustomLabel5.TabIndex = 4;
+            this.bunifuCustomLabel5.TabIndex = 2;
             this.bunifuCustomLabel5.Text = "Username";
             // 
             // bunifuCustomLabel3
@@ -338,7 +380,7 @@ namespace OPChat___Design
             this.bunifuCustomLabel3.Location = new System.Drawing.Point(200, 19);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
             this.bunifuCustomLabel3.Size = new System.Drawing.Size(77, 17);
-            this.bunifuCustomLabel3.TabIndex = 2;
+            this.bunifuCustomLabel3.TabIndex = 1;
             this.bunifuCustomLabel3.Text = "Last Name";
             // 
             // bunifuCustomLabel1
@@ -376,9 +418,10 @@ namespace OPChat___Design
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(0)))), ((int)(((byte)(19)))));
             this.label3.Location = new System.Drawing.Point(31, 156);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(143, 17);
+            this.label3.Size = new System.Drawing.Size(38, 17);
             this.label3.TabIndex = 14;
-            this.label3.Text = "Username doesn\'t exist";
+            this.label3.Text = "ERRO";
+            this.label3.Visible = false;
             // 
             // label4
             // 
@@ -388,9 +431,10 @@ namespace OPChat___Design
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(0)))), ((int)(((byte)(19)))));
             this.label4.Location = new System.Drawing.Point(31, 288);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(122, 17);
+            this.label4.Size = new System.Drawing.Size(38, 17);
             this.label4.TabIndex = 15;
-            this.label4.Text = "Incorrect password";
+            this.label4.Text = "ERRO";
+            this.label4.Visible = false;
             // 
             // SignIn
             // 
@@ -434,8 +478,10 @@ namespace OPChat___Design
             this.Username2.Margin = new System.Windows.Forms.Padding(4);
             this.Username2.Name = "Username2";
             this.Username2.Size = new System.Drawing.Size(344, 44);
-            this.Username2.TabIndex = 11;
+            this.Username2.TabIndex = 2;
             this.Username2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Username2.OnValueChanged += new System.EventHandler(this.TextBox_TextChanged);
+            this.Username2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.bunifuThinButton24_KeyDown);
             // 
             // Password2
             // 
@@ -452,9 +498,10 @@ namespace OPChat___Design
             this.Password2.Margin = new System.Windows.Forms.Padding(4);
             this.Password2.Name = "Password2";
             this.Password2.Size = new System.Drawing.Size(344, 44);
-            this.Password2.TabIndex = 9;
+            this.Password2.TabIndex = 3;
             this.Password2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-       
+            this.Password2.OnValueChanged += new System.EventHandler(this.TextBox_TextChanged);
+            this.Password2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.bunifuThinButton24_KeyDown);
             // 
             // bunifuCustomLabel6
             // 
@@ -465,9 +512,8 @@ namespace OPChat___Design
             this.bunifuCustomLabel6.Location = new System.Drawing.Point(41, 195);
             this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
             this.bunifuCustomLabel6.Size = new System.Drawing.Size(69, 17);
-            this.bunifuCustomLabel6.TabIndex = 6;
+            this.bunifuCustomLabel6.TabIndex = 1;
             this.bunifuCustomLabel6.Text = "Password";
-     
             // 
             // bunifuCustomLabel8
             // 
@@ -478,7 +524,7 @@ namespace OPChat___Design
             this.bunifuCustomLabel8.Location = new System.Drawing.Point(41, 69);
             this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
             this.bunifuCustomLabel8.Size = new System.Drawing.Size(71, 17);
-            this.bunifuCustomLabel8.TabIndex = 4;
+            this.bunifuCustomLabel8.TabIndex = 0;
             this.bunifuCustomLabel8.Text = "Username";
             // 
             // animator1
@@ -614,13 +660,12 @@ namespace OPChat___Design
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-
             // 
             // login
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(513, 592);
+            this.ClientSize = new System.Drawing.Size(515, 592);
             this.Controls.Add(this.slideC);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bunifuThinButton28);
@@ -632,10 +677,10 @@ namespace OPChat___Design
             this.Controls.Add(this.bunifuThinButton21);
             this.animator1.SetDecoration(this, AnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-
             this.slideA.ResumeLayout(false);
             this.slideA.PerformLayout();
             this.slideB.ResumeLayout(false);
@@ -683,6 +728,8 @@ namespace OPChat___Design
         private System.Windows.Forms.Panel slideC;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }
 

@@ -87,6 +87,7 @@
             this.Controls.Add(this.bunifuCustomLabel5);
             this.Controls.Add(this.bunifuThinButton27);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ConnectionIssues";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ConnectionIssues";

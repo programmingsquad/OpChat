@@ -17,10 +17,17 @@ namespace OPChat___Design
         public login()
         {
             InitializeComponent();
-            label2.Visible = false;
-            label3.Visible = false;
-            label4.Visible = false;
-            label5.Visible = false;
+
+            //Creates Upload and download folders
+            string path = Directory.GetParent(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)).FullName;
+            if (!Directory.Exists(path + @"\OpChat\Uploads"))
+            {
+                Directory.CreateDirectory(path + @"\OpChat\Uploads");
+            }
+            if (!Directory.Exists(path + @"\OpChat\Downloads"))
+            {
+                Directory.CreateDirectory(path + @"\OpChat\Downloads");
+            }
         }
 
         //Movable window
@@ -38,7 +45,7 @@ namespace OPChat___Design
         //Set up loading
         public async Task Loading()
         {
-            await Task.Delay(1000);
+            await Task.Delay(500);
         }
 
         //Sign up process 
@@ -57,6 +64,8 @@ namespace OPChat___Design
                     label2.Visible = false;
                     if (registerUser(FirstName.Text, LastName.Text, Username.Text.Trim(), Password.Text) == "easy")
                     {
+                        label1.Visible = false;
+
                         slideA.Visible = false;
 
                         slideC.Visible = false;
@@ -74,6 +83,7 @@ namespace OPChat___Design
                     {
                         ConnectionIssues issues = new ConnectionIssues();
                         issues.ShowDialog();
+
                         SignUp.Enabled = true;
                     }
 
@@ -81,13 +91,65 @@ namespace OPChat___Design
                 else
                 {
                     label2.Visible = true;
+                    label2.Text = "Username already taken";
+
                     SignUp.Enabled = true;
                 }
             }
         }
 
-       
-       
+        private async void bunifuThinButton23_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                FirstName.Text = FirstName.Text.Trim();
+                LastName.Text = LastName.Text.Trim();
+                Username.Text = Username.Text.Trim();
+                Password.Text = Password.Text.Trim();
+                ConfirmPassword.Text = ConfirmPassword.Text.Trim();
+
+                if (AllValid())
+                {
+                    if (getDataFromUser(Username.Text) == "false")
+                    {
+                        label2.Visible = false;
+                        if (registerUser(FirstName.Text, LastName.Text, Username.Text.Trim(), Password.Text) == "easy")
+                        {
+                            e.Handled = true;
+                            e.SuppressKeyPress = true;
+
+                            slideA.Visible = false;
+
+                            slideC.Visible = false;
+                            slideC.Left = 53;
+                            slideC.Visible = true;
+                            slideC.Refresh();
+
+                            await Loading();
+
+                            this.Hide();
+                            ChatScreen chat = new ChatScreen(getDataFromUser(Username.Text));
+                            chat.ShowDialog();
+                        }
+                        else
+                        {
+                            ConnectionIssues issues = new ConnectionIssues();
+                            issues.ShowDialog();
+
+                            SignUp.Enabled = true;
+                        }
+
+                    }
+                    else
+                    {
+                        label2.Visible = true;
+                        SignUp.Enabled = true;
+                    }
+                }
+            }
+        }
+
+
         //Go to sign in
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
@@ -103,6 +165,13 @@ namespace OPChat___Design
 
                 bunifuSeparator1.Left = bunifuThinButton22.Left;
                 bunifuSeparator1.Width = bunifuThinButton22.Width;
+
+                label2.Visible = false;
+                label3.Visible = false;
+                label4.Visible = false;
+                label5.Visible = false;
+                label7.Visible = false;
+                label8.Visible = false;
             }
         }
 
@@ -121,6 +190,13 @@ namespace OPChat___Design
 
                 bunifuSeparator1.Left = bunifuThinButton21.Left;
                 bunifuSeparator1.Width = bunifuThinButton21.Width;
+
+                label2.Visible = false;
+                label3.Visible = false;
+                label4.Visible = false;
+                label5.Visible = false;
+                label7.Visible = false;
+                label8.Visible = false;
             }
         }
 
@@ -141,7 +217,16 @@ namespace OPChat___Design
 
         public bool isValid(string texto) { 
         
-            string[] caractersInvalidos = {"@", " ", "#", "$", "%", "_", "-", "+", "=", "|", " < ", ">", ":", ";", ",","ç", "á", "à", "ã", "â", "ô", "ê" , "é", "õ", "ó", "ç", "Á", "À", "Ã", "Â", "Ó", "Ê", "É", "Õ", "Ó", "´", "`", "~", "^"};
+            string[] caractersInvalidos = {"*", ".","\"", "/", "\\", "[", "]", ":", ";", "|", "=", ",", "{", "}", "%" };
+            foreach (String elemento in caractersInvalidos) { if (texto.Contains(elemento)) { return false; } }
+
+            return true;
+        }
+
+        public bool isValid2(string texto)
+        {
+
+            string[] caractersInvalidos = { "*", ".", "\"", "/", "\\", "[", "]", ":", ";", "|", "=", ",", "{", "}", "à", "á", "ã", "â", "À", "Á", "Ã", "Â", "ò", "ó", "õ", "ô", "Ò", "Ó", "Õ", "Ô", "è", "é", "ê", "É", "È", "Ê", "ç", "Ç", "%" };
             foreach (String elemento in caractersInvalidos) { if (texto.Contains(elemento)) { return false; } }
 
             return true;
@@ -149,79 +234,90 @@ namespace OPChat___Design
 
         public Boolean AllValid()
         {
-            label5.Visible = false;
             if (!isValid(FirstName.Text))
             {
-                Alert alert = new Alert();
-                alert.ShowDialog(); 
+                label7.Visible = true;
+                label7.Text = "Symbols aren't allowed";
                 return false;
             }
 
             if (FirstName.Text == string.Empty)
             {
-                Alert alert = new Alert();
-                alert.ShowDialog();
+                label7.Visible = true;
+                label7.Text = "Fill in all the textboxes";
                 return false;
             }
 
             if (!isValid(LastName.Text))
             {
-                Alert alert = new Alert();
-                alert.ShowDialog();
+                label8.Visible = true;
+                label8.Text = "Symbols aren't allowed";
                 return false;
             }
 
             if (LastName.Text == string.Empty)
             {
-                Alert alert = new Alert();
-                alert.ShowDialog();
+                label8.Visible = true;
+                label8.Text = "Fill in all the textboxes";
                 return false;
             }
 
-            if (!isValid(Username.Text))
+            if (!isValid2(Username.Text))
             {
-                Alert alert = new Alert();
-                alert.ShowDialog();
+                label2.Visible = true;
+                label2.Text = "Symbols and accent marks aren't allowed";
                 return false;
             }
 
             if (Username.Text == string.Empty)
             {
-                Alert alert = new Alert();
-                alert.ShowDialog();
+                label2.Visible = true;
+                label2.Text = "Fill in all the textboxes";
                 return false;
             }
-            if (!isValid(Password.Text))
+            if (!isValid2(Password.Text))
             {
-                Alert alert = new Alert();
-                alert.ShowDialog();
+                label5.Visible = true;
+                label5.Text = "Symbols and accent marks aren't allowed";
                 return false;
             }
             if (Password.Text == string.Empty)
             {
-                Alert alert = new Alert();
-                alert.ShowDialog();
+                label5.Visible = true;
+                label5.Text = "Fill in all the textboxes";
                 return false;
             }
-            if (!isValid(ConfirmPassword.Text))
+            if (!isValid2(ConfirmPassword.Text))
             {
-                Alert alert = new Alert();
-                alert.ShowDialog();
+                label5.Visible = true;
+                label5.Text = "Symbols and accent marks aren't allowed";
                 return false;
             }
 
             if (ConfirmPassword.Text == string.Empty)
             {
-                Alert alert = new Alert();
-                alert.ShowDialog();
+                label7.Visible = true;
+                label7.Text = "Fill in all the textboxes";
                 return false;
             }
             if (Password.Text != ConfirmPassword.Text)
             {
-
                 label5.Visible = true;
+                label5.Text = "Passwords don't match";
                 return false;
             }
+            if (Username.Text.Length > 12)
+            {
+                label2.Visible = true;
+                label2.Text = "Usernames can only have up to 12 characters";
+                return false;
+            }
+            /*if (Password.Text.Length < 8) //Activate when testing is finished
+            {
+                label5.Visible = true;
+                label5.Text = "Your password must be at least 8 characters long";
+                return false;
+            }*/
             return true;
         }
 
@@ -263,6 +359,31 @@ namespace OPChat___Design
             }
         }
 
+        private async void bunifuThinButton24_KeyDown (object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (Login())
+                {
+                    e.Handled = true;
+                    e.SuppressKeyPress = true;
+
+                    slideB.Visible = false;
+
+                    slideC.Visible = false;
+                    slideC.Left = 53;
+                    slideC.Visible = true;
+                    slideC.Refresh();
+
+                    await Loading();
+
+                    this.Hide();
+                    ChatScreen chat = new ChatScreen(getDataFromUser(Username2.Text));
+                    chat.ShowDialog();
+                }
+            }
+        }
+
         //Sign in process
         public bool Login()
         {
@@ -271,8 +392,6 @@ namespace OPChat___Design
 
             if (AllValid2())
             {
-                label3.Visible = false;
-                label4.Visible = false;
                 SignUp.Enabled = true;
                 string response = getDataFromUser(Username2.Text);
 
@@ -295,6 +414,8 @@ namespace OPChat___Design
                     else
                     {
                         label4.Visible = true;
+                        label4.Text = "Incorrect password";
+
                         SignIn.Enabled = true;
                         return false;
                     }
@@ -303,6 +424,8 @@ namespace OPChat___Design
                 else
                 {
                     label3.Visible = true;
+                    label3.Text = "Username not found";
+
                     SignIn.Enabled = true;
                     return false;
                 }
@@ -310,19 +433,7 @@ namespace OPChat___Design
 
             return false;
         }
-      
-        public bool isValid2(string texto)
-        {
-
-            string[] caractersInvalidos = { "%", "+", "=", "|", ":", "{", "}", "[", "]" };
-
-            foreach (String elemento in caractersInvalidos) { if (texto.Contains(elemento)) { return false; } }
-
-            return true;
-
-        }
-    
-        //(Changed DB)
+        
         public string getDataFromUser(string Username2)
         {
 
@@ -344,16 +455,18 @@ namespace OPChat___Design
 
         public static string Parse(string input, string tag)
         {
-            input = input.Replace("{", "").Replace("}", "");
-            string[] inputArray = input.Split(',');
-            foreach (string y in inputArray)
+            string returned;
+            int tagsize = tag.Length;
+            if (input.Contains(tag))
             {
-                if (y.Contains(tag))
-                {
-                    return y.Split(':').Last().ToString().Replace("\"","");
-                }
+                string[] output = input.Remove(0, input.IndexOf(tag) + tagsize + 3).Split('"');
+                returned = output[0];
+                return returned;
             }
-            return "erro";
+            else
+            {
+                return "Parse Error";
+            }
         }
 
         public Boolean AllValid2()
@@ -361,28 +474,28 @@ namespace OPChat___Design
 
             if (!isValid(Username2.Text))
             {
-                Alert alert = new Alert();
-                alert.ShowDialog();
+                label3.Visible = true;
+                label3.Text = "Symbols and accent marks aren't allowed";
                 return false;
             }
 
             if (Username2.Text == string.Empty)
             {
-                Alert alert = new Alert();
-                alert.ShowDialog();
+                label3.Visible = true;
+                label3.Text = "Fill in all the textboxes";
                 return false;
             }
             if (!isValid(Password2.Text))
             {
-                Alert alert = new Alert();
-                alert.ShowDialog();
+                label4.Visible = true;
+                label4.Text = "Symbols and accent marks aren't allowed";
                 return false;
             }
 
             if (Password2.Text == string.Empty)
             {
-                Alert alert = new Alert();
-                alert.ShowDialog();
+                label4.Visible = true;
+                label4.Text = "Fill in all the textboxes";
                 return false;
             }
 
@@ -390,8 +503,15 @@ namespace OPChat___Design
 
         }
 
-       
-
+        private void TextBox_TextChanged(object sender, EventArgs e)
+        {
+            label2.Visible = false;
+            label3.Visible = false;
+            label4.Visible = false;
+            label5.Visible = false;
+            label7.Visible = false;
+            label8.Visible = false;
+        }
     }
 }
 

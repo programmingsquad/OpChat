@@ -66,24 +66,24 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OPChat - Design.exe" size="577536">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OPChat - Design.exe" size="1785344">
       <assemblyIdentity name="OPChat - Design" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>RQwmsGp5cU/s/hFLdXNtYOpYiAxms6oTDZnXFQqyTx4=</dsig:DigestValue>
+        <dsig:DigestValue>ijc1fbOmB+Lw9csi9PzIvtA8VrqU89UJXYMLphK4ypQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="OPChat - Design.exe.config" size="189">
+  <file name="OPChat - Design.exe.config" size="184">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+      <dsig:DigestValue>gXPU0Xy3KObyxeLOgSTOfrD0WdxiCFvKq3hqvx9rN6c=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

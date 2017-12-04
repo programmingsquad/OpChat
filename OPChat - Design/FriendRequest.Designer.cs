@@ -63,7 +63,7 @@
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(262, 74);
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(269, 74);
             this.bunifuFlatButton1.TabIndex = 2;
             this.bunifuFlatButton1.Text = " from Contact1";
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -73,6 +73,7 @@
             // bunifuImageButton1
             // 
             this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
+            this.bunifuImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
             this.bunifuImageButton1.ImageActive = null;
             this.bunifuImageButton1.Location = new System.Drawing.Point(170, 17);
@@ -87,6 +88,7 @@
             // bunifuImageButton2
             // 
             this.bunifuImageButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
+            this.bunifuImageButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
             this.bunifuImageButton2.ImageActive = null;
             this.bunifuImageButton2.Location = new System.Drawing.Point(216, 17);
@@ -107,7 +109,7 @@
             this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.bunifuFlatButton1);
             this.Name = "FriendRequest";
-            this.Size = new System.Drawing.Size(265, 74);
+            this.Size = new System.Drawing.Size(269, 74);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
             this.ResumeLayout(false);

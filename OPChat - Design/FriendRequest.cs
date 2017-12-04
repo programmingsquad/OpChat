@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net;
 using System.IO;
+using Bunifu.Framework.UI;
 
 namespace OPChat___Design
 {
@@ -64,17 +65,18 @@ namespace OPChat___Design
 
         public static string Parse(string input, string tag)
         {
-
-            input = input.Replace("{", "").Replace("}", "");
-            string[] inputArray = input.Split(',');
-            foreach (string y in inputArray)
+            string returned;
+            int tagsize = tag.Length;
+            if (input.Contains(tag))
             {
-                if (y.Contains(tag))
-                {
-                    return y.Split(':').Last().ToString().Replace("\"", "");
-                }
+                string[] output = input.Remove(0, input.IndexOf(tag) + tagsize + 3).Split('"');
+                returned = output[0];
+                return returned;
             }
-            return "erro";
+            else
+            {
+                return "Parse Error";
+            }
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)

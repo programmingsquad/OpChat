@@ -12,13 +12,14 @@ namespace OPChat___Design
     {
         string userData;
         chatbox2 current = new chatbox2();
-        string myUsername;
-        List<string> contactUsernames = new List<string>();
-        List<contact> contactss = new List<contact>();
-        List<chatbox2> chats = new List<chatbox2>();
-        friendPanel friendP;
-     
-      
+        public contact currentC = new contact();
+        public string myUsername;
+        public List<string> contactUsernames = new List<string>();
+        public List<contact> contactss = new List<contact>();
+        public List<chatbox2> chats = new List<chatbox2>();
+        public friendPanel friendP;
+        public List<string> tempFriends;
+
 
 
         public screen(string userData) {
@@ -42,44 +43,67 @@ namespace OPChat___Design
             foreach (string contactUser in contactUsernames)
             {
        
-                chats.Add(new chatbox2(myUsername, contactUser));
+                chats.Add(new chatbox2(myUsername, contactUser, this));
                 string contactData = getDataFromUser(contactUser);
                 contactss.Add(new contact("  " + Parse(contactData, "FirstName") + " " + Parse(contactData, "LastName"), contactUser, chats[chats.Count - 1], this));
                 friendP.add(contactss[contactss.Count - 1]);
              
             }
-
+            friendP.NoFriends();
         }
-
-       
 
 
         public void addContactToPanel(string username, string name, string contactUsername) {
 
-            chats.Add(new chatbox2(username, contactUsername));
+            chats.Add(new chatbox2(username, contactUsername, this));
             contactss.Add(new contact("  " + name, contactUsername, chats[chats.Count - 1], this));
             contactUsernames.Add(contactUsername);
             friendP.add(contactss[contactss.Count - 1]);
 
         }
 
+        public void removeChat(chatbox2 chatToRemove, contact ctc) {
+            chats.Add(new chatbox2(chatToRemove.username, chatToRemove.contact, this));
+            ctc.chatbox = chats[chats.Count - 1];
+            chats.Remove(chatToRemove);
+            
+            panel5.Controls.Remove(chatToRemove);
+            ctcIcon.Visible = false;
+            ctcName.Visible = false;
+            pictureBox1.Visible = true;
+            label1.Visible = true;
+
+        }   
+
 
         public void ChangeToChat(chatbox2 chatToShow)
         {
-            if (current != chatToShow) { 
+            if (current != chatToShow) {
+                ctcName.Text = currentC.contactName;
                 panel5.Controls.Remove(current);
-            panel5.Controls.Add(chatToShow);
-            current = chatToShow;
+                panel5.Controls.Add(chatToShow);
+                current = chatToShow;
+                ctcIcon.Visible = true;
+                ctcName.Visible = true;
+                pictureBox1.Visible = false;
+                label1.Visible = false;
              }
         }
 
-        public static string Parse(string input, string tag) {
-
-            input = input.Replace("{", "").Replace("}", "");
-            string[] inputArray = input.Split(',');
-            foreach (string y in inputArray) { if (y.Contains(tag)) { return y.Split(':').Last().ToString().Replace("\"", ""); } }
-            return "erro";
-
+        public static string Parse(string input, string tag)
+        {
+            string returned;
+            int tagsize = tag.Length;
+            if (input.Contains(tag))
+            {
+                string[] output = input.Remove(0, input.IndexOf(tag) + tagsize + 3).Split('"');
+                returned = output[0];
+                return returned;
+            }
+            else
+            {
+                return "Parse Error";
+            }
         }
 
         public string getDataFromUser(string username) {
@@ -97,7 +121,7 @@ namespace OPChat___Design
 
         private void refreshTimer_Tick(object sender, EventArgs e)
         {
-            current.refreshChat();
+            current.loadChat();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -107,9 +131,9 @@ namespace OPChat___Design
 
 
         public void updateFriendList() {
-
+            
             string data = getDataFromUser(myUsername);
-            List<string> tempFriends = new List<string>();
+            tempFriends = new List<string>();
             
 
             for (int contactNumber = 5; contactNumber > 0; contactNumber--)
@@ -118,7 +142,6 @@ namespace OPChat___Design
                 if (contact != "")
                 {
                     tempFriends.Add(contact);
-
                 }                
 
             }
@@ -128,7 +151,7 @@ namespace OPChat___Design
                 if (!contactUsernames.Contains(contactToVerify))
                 {
                     contactUsernames.Add(contactToVerify);
-                    chats.Add(new chatbox2(myUsername, contactToVerify));
+                    chats.Add(new chatbox2(myUsername, contactToVerify, this));
                     string contactData = getDataFromUser(contactToVerify);
                     contactss.Add(new contact("  " + Parse(contactData, "FirstName") + " " + Parse(contactData, "LastName"), contactToVerify, chats[chats.Count - 1], this));
                     friendP.add(contactss[contactss.Count - 1]);
@@ -136,12 +159,19 @@ namespace OPChat___Design
 
             }
 
-
+            
         }
 
+        private void searchBar_Enter(object sender, EventArgs e)
+        {
+            bunifuMaterialTextbox1.Text = "";
+        }
 
+        private void searchBar_Leave(object sender, EventArgs e)
+        {
+            bunifuMaterialTextbox1.Text = "Add someone";
+        }
 
-
-
+      
     }
 }

@@ -37,8 +37,8 @@
             this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
-            this.openFile = new System.Windows.Forms.OpenFileDialog();
             this.label1 = new System.Windows.Forms.Label();
+            this.openFile = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
@@ -67,11 +67,11 @@
             this.uploadingPanel.Size = new System.Drawing.Size(808, 66);
             this.uploadingPanel.TabIndex = 0;
             this.uploadingPanel.Visible = false;
-            this.uploadingPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.uploadingPanel_Paint);
             // 
             // bunifuImageButton2
             // 
             this.bunifuImageButton2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
             this.bunifuImageButton2.ImageActive = null;
             this.bunifuImageButton2.Location = new System.Drawing.Point(21, 25);
@@ -86,6 +86,7 @@
             // bunifuImageButton1
             // 
             this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(119)))), ((int)(((byte)(90)))));
+            this.bunifuImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
             this.bunifuImageButton1.ImageActive = null;
             this.bunifuImageButton1.Location = new System.Drawing.Point(748, 17);
@@ -125,13 +126,18 @@
             // 
             // panel2
             // 
+            this.panel2.AllowDrop = true;
             this.panel2.AutoScroll = true;
+            this.panel2.BackColor = System.Drawing.SystemColors.Control;
             this.panel2.Controls.Add(this.label1);
             this.panel2.ForeColor = System.Drawing.SystemColors.ButtonShadow;
             this.panel2.Location = new System.Drawing.Point(0, 1);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(808, 535);
             this.panel2.TabIndex = 3;
+            this.panel2.DragDrop += new System.Windows.Forms.DragEventHandler(this.panel2_DragDrop);
+            this.panel2.DragEnter += new System.Windows.Forms.DragEventHandler(this.panel2_DragEnter);
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label1
             // 
@@ -146,6 +152,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "chatbox2";

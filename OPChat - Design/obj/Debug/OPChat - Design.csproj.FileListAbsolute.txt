@@ -171,51 +171,204 @@ C:\Users\Utilizador\Desktop\OpChat-master\OPChat - Design\bin\Debug\OPChat - Des
 C:\Users\Utilizador\Desktop\OpChat-master\OPChat - Design\bin\Debug\OPChat - Design.application
 C:\Users\Utilizador\Desktop\OpChat-master\OPChat - Design\obj\Debug\OPChat - Design.exe.manifest
 C:\Users\Utilizador\Desktop\OpChat-master\OPChat - Design\obj\Debug\OPChat - Design.application
-C:\Users\Utilizador\Desktop\OpChat\OpChat\OPChat - Design\bin\Debug\OPChat - Design.exe.config
-C:\Users\Utilizador\Desktop\OpChat\OpChat\OPChat - Design\bin\Debug\OPChat - Design.exe.manifest
-C:\Users\Utilizador\Desktop\OpChat\OpChat\OPChat - Design\bin\Debug\OPChat - Design.application
-C:\Users\Utilizador\Desktop\OpChat\OpChat\OPChat - Design\bin\Debug\OPChat - Design.exe
-C:\Users\Utilizador\Desktop\OpChat\OpChat\OPChat - Design\bin\Debug\OPChat - Design.pdb
-C:\Users\Utilizador\Desktop\OpChat\OpChat\OPChat - Design\obj\Debug\OPChat - Design.csprojResolveAssemblyReference.cache
-C:\Users\Utilizador\Desktop\OpChat\OpChat\OPChat - Design\obj\Debug\OPChat___Design.Alert.resources
-C:\Users\Utilizador\Desktop\OpChat\OpChat\OPChat - Design\obj\Debug\TestChat.bubble.resources
-C:\Users\Utilizador\Desktop\OpChat\OpChat\OPChat - Design\obj\Debug\TestChat.chatbox2.resources
-C:\Users\Utilizador\Desktop\OpChat\OpChat\OPChat - Design\obj\Debug\TestChat.ChatScreen.resources
-C:\Users\Utilizador\Desktop\OpChat\OpChat\OPChat - Design\obj\Debug\OPChat___Design.ConnectionIssues.resources
-C:\Users\Utilizador\Desktop\OpChat\OpChat\OPChat - Design\obj\Debug\OPChat___Design.contact.resources
-C:\Users\Utilizador\Desktop\OpChat\OpChat\OPChat - Design\obj\Debug\OPChat___Design.login.resources
-C:\Users\Utilizador\Desktop\OpChat\OpChat\OPChat - Design\obj\Debug\OPChat___Design.friendPanel.resources
-C:\Users\Utilizador\Desktop\OpChat\OpChat\OPChat - Design\obj\Debug\OPChat___Design.FriendRequest.resources
-C:\Users\Utilizador\Desktop\OpChat\OpChat\OPChat - Design\obj\Debug\OPChat___Design.Properties.Resources.resources
-C:\Users\Utilizador\Desktop\OpChat\OpChat\OPChat - Design\obj\Debug\OPChat___Design.screen.resources
-C:\Users\Utilizador\Desktop\OpChat\OpChat\OPChat - Design\obj\Debug\OPChat___Design.SuccessfulRegister.resources
-C:\Users\Utilizador\Desktop\OpChat\OpChat\OPChat - Design\obj\Debug\OPChat - Design.csproj.GenerateResource.Cache
-C:\Users\Utilizador\Desktop\OpChat\OpChat\OPChat - Design\obj\Debug\OPChat - Design.csproj.CoreCompileInputs.cache
-C:\Users\Utilizador\Desktop\OpChat\OpChat\OPChat - Design\obj\Debug\OPChat - Design.exe.manifest
-C:\Users\Utilizador\Desktop\OpChat\OpChat\OPChat - Design\obj\Debug\OPChat - Design.application
-C:\Users\Utilizador\Desktop\OpChat\OpChat\OPChat - Design\obj\Debug\OPChat - Design.exe
-C:\Users\Utilizador\Desktop\OpChat\OpChat\OPChat - Design\obj\Debug\OPChat - Design.pdb
-C:\Users\Utilizador\Desktop\opop\OPChat - Design\bin\Debug\OPChat - Design.exe.config
-C:\Users\Utilizador\Desktop\opop\OPChat - Design\bin\Debug\OPChat - Design.exe.manifest
-C:\Users\Utilizador\Desktop\opop\OPChat - Design\bin\Debug\OPChat - Design.application
-C:\Users\Utilizador\Desktop\opop\OPChat - Design\bin\Debug\OPChat - Design.exe
-C:\Users\Utilizador\Desktop\opop\OPChat - Design\bin\Debug\OPChat - Design.pdb
-C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\OPChat - Design.csprojResolveAssemblyReference.cache
-C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\OPChat___Design.Alert.resources
-C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\TestChat.bubble.resources
-C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\TestChat.chatbox2.resources
-C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\TestChat.ChatScreen.resources
-C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\OPChat___Design.ConnectionIssues.resources
-C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\OPChat___Design.contact.resources
-C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\OPChat___Design.login.resources
-C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\OPChat___Design.friendPanel.resources
-C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\OPChat___Design.FriendRequest.resources
-C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\OPChat___Design.Properties.Resources.resources
-C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\OPChat___Design.screen.resources
-C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\OPChat___Design.SuccessfulRegister.resources
-C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\OPChat - Design.csproj.GenerateResource.Cache
-C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\OPChat - Design.csproj.CoreCompileInputs.cache
-C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\OPChat - Design.exe.manifest
-C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\OPChat - Design.application
-C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\OPChat - Design.exe
-C:\Users\Utilizador\Desktop\opop\OPChat - Design\obj\Debug\OPChat - Design.pdb
+C:\Users\Rafa\source\repos\OpChat- Master\OPChat - Design\bin\Debug\OPChat - Design.exe.config
+C:\Users\Rafa\source\repos\OpChat- Master\OPChat - Design\bin\Debug\OPChat - Design.exe.manifest
+C:\Users\Rafa\source\repos\OpChat- Master\OPChat - Design\bin\Debug\OPChat - Design.application
+C:\Users\Rafa\source\repos\OpChat- Master\OPChat - Design\bin\Debug\OPChat - Design.exe
+C:\Users\Rafa\source\repos\OpChat- Master\OPChat - Design\bin\Debug\OPChat - Design.pdb
+C:\Users\Rafa\source\repos\OpChat- Master\OPChat - Design\bin\Debug\Animator.dll
+C:\Users\Rafa\source\repos\OpChat- Master\OPChat - Design\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\Rafa\source\repos\OpChat- Master\OPChat - Design\obj\Debug\OPChat - Design.csprojResolveAssemblyReference.cache
+C:\Users\Rafa\source\repos\OpChat- Master\OPChat - Design\obj\Debug\OPChat___Design.Alert.resources
+C:\Users\Rafa\source\repos\OpChat- Master\OPChat - Design\obj\Debug\TestChat.bubble.resources
+C:\Users\Rafa\source\repos\OpChat- Master\OPChat - Design\obj\Debug\TestChat.chatbox2.resources
+C:\Users\Rafa\source\repos\OpChat- Master\OPChat - Design\obj\Debug\TestChat.ChatScreen.resources
+C:\Users\Rafa\source\repos\OpChat- Master\OPChat - Design\obj\Debug\OPChat___Design.ConnectionIssues.resources
+C:\Users\Rafa\source\repos\OpChat- Master\OPChat - Design\obj\Debug\OPChat___Design.contact.resources
+C:\Users\Rafa\source\repos\OpChat- Master\OPChat - Design\obj\Debug\OPChat___Design.login.resources
+C:\Users\Rafa\source\repos\OpChat- Master\OPChat - Design\obj\Debug\OPChat___Design.friendPanel.resources
+C:\Users\Rafa\source\repos\OpChat- Master\OPChat - Design\obj\Debug\OPChat___Design.FriendRequest.resources
+C:\Users\Rafa\source\repos\OpChat- Master\OPChat - Design\obj\Debug\OPChat___Design.Properties.Resources.resources
+C:\Users\Rafa\source\repos\OpChat- Master\OPChat - Design\obj\Debug\OPChat___Design.screen.resources
+C:\Users\Rafa\source\repos\OpChat- Master\OPChat - Design\obj\Debug\OPChat___Design.SuccessfulRegister.resources
+C:\Users\Rafa\source\repos\OpChat- Master\OPChat - Design\obj\Debug\OPChat - Design.csproj.GenerateResource.Cache
+C:\Users\Rafa\source\repos\OpChat- Master\OPChat - Design\obj\Debug\OPChat - Design.csproj.CoreCompileInputs.cache
+C:\Users\Rafa\source\repos\OpChat- Master\OPChat - Design\obj\Debug\OPChat - Design.exe.manifest
+C:\Users\Rafa\source\repos\OpChat- Master\OPChat - Design\obj\Debug\OPChat - Design.application
+C:\Users\Rafa\source\repos\OpChat- Master\OPChat - Design\obj\Debug\OPChat - Design.exe
+C:\Users\Rafa\source\repos\OpChat- Master\OPChat - Design\obj\Debug\OPChat - Design.pdb
+C:\Users\Rafa\source\repos\OpChat - Master\OPChat - Design\obj\Debug\OPChat - Design.csprojResolveAssemblyReference.cache
+C:\Users\Rafa\source\repos\OpChat - Master\OPChat - Design\obj\Debug\OPChat___Design.Alert.resources
+C:\Users\Rafa\source\repos\OpChat - Master\OPChat - Design\obj\Debug\TestChat.bubble.resources
+C:\Users\Rafa\source\repos\OpChat - Master\OPChat - Design\obj\Debug\TestChat.chatbox2.resources
+C:\Users\Rafa\source\repos\OpChat - Master\OPChat - Design\obj\Debug\TestChat.ChatScreen.resources
+C:\Users\Rafa\source\repos\OpChat - Master\OPChat - Design\obj\Debug\OPChat___Design.ConnectionIssues.resources
+C:\Users\Rafa\source\repos\OpChat - Master\OPChat - Design\obj\Debug\OPChat___Design.contact.resources
+C:\Users\Rafa\source\repos\OpChat - Master\OPChat - Design\obj\Debug\OPChat___Design.login.resources
+C:\Users\Rafa\source\repos\OpChat - Master\OPChat - Design\obj\Debug\OPChat___Design.friendPanel.resources
+C:\Users\Rafa\source\repos\OpChat - Master\OPChat - Design\obj\Debug\OPChat___Design.FriendRequest.resources
+C:\Users\Rafa\source\repos\OpChat - Master\OPChat - Design\obj\Debug\OPChat___Design.Properties.Resources.resources
+C:\Users\Rafa\source\repos\OpChat - Master\OPChat - Design\obj\Debug\OPChat___Design.screen.resources
+C:\Users\Rafa\source\repos\OpChat - Master\OPChat - Design\obj\Debug\OPChat___Design.SuccessfulRegister.resources
+C:\Users\Rafa\source\repos\OpChat - Master\OPChat - Design\obj\Debug\OPChat - Design.csproj.GenerateResource.Cache
+C:\Users\Rafa\source\repos\OpChat - Master\OPChat - Design\obj\Debug\OPChat - Design.csproj.CoreCompileInputs.cache
+C:\Users\Rafa\source\repos\OpChat - Master\OPChat - Design\obj\Debug\OPChat - Design.exe
+C:\Users\Rafa\source\repos\OpChat - Master\OPChat - Design\obj\Debug\OPChat - Design.pdb
+C:\Users\Rafa\source\repos\OpChat - Master\OPChat - Design\bin\Debug\OPChat - Design.exe.config
+C:\Users\Rafa\source\repos\OpChat - Master\OPChat - Design\bin\Debug\OPChat - Design.exe.manifest
+C:\Users\Rafa\source\repos\OpChat - Master\OPChat - Design\bin\Debug\OPChat - Design.application
+C:\Users\Rafa\source\repos\OpChat - Master\OPChat - Design\bin\Debug\OPChat - Design.exe
+C:\Users\Rafa\source\repos\OpChat - Master\OPChat - Design\bin\Debug\OPChat - Design.pdb
+C:\Users\Rafa\source\repos\OpChat - Master\OPChat - Design\bin\Debug\Animator.dll
+C:\Users\Rafa\source\repos\OpChat - Master\OPChat - Design\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\Rafa\source\repos\OpChat - Master\OPChat - Design\obj\Debug\OPChat - Design.exe.manifest
+C:\Users\Rafa\source\repos\OpChat - Master\OPChat - Design\obj\Debug\OPChat - Design.application
+C:\Users\a41725\Desktop\OpChat - Master\OPChat - Design\bin\Debug\OPChat - Design.exe.config
+C:\Users\a41725\Desktop\OpChat - Master\OPChat - Design\bin\Debug\OPChat - Design.exe.manifest
+C:\Users\a41725\Desktop\OpChat - Master\OPChat - Design\bin\Debug\OPChat - Design.application
+C:\Users\a41725\Desktop\OpChat - Master\OPChat - Design\bin\Debug\OPChat - Design.exe
+C:\Users\a41725\Desktop\OpChat - Master\OPChat - Design\bin\Debug\OPChat - Design.pdb
+C:\Users\a41725\Desktop\OpChat - Master\OPChat - Design\obj\Debug\OPChat - Design.csprojResolveAssemblyReference.cache
+C:\Users\a41725\Desktop\OpChat - Master\OPChat - Design\obj\Debug\OPChat___Design.Alert.resources
+C:\Users\a41725\Desktop\OpChat - Master\OPChat - Design\obj\Debug\TestChat.bubble.resources
+C:\Users\a41725\Desktop\OpChat - Master\OPChat - Design\obj\Debug\TestChat.chatbox2.resources
+C:\Users\a41725\Desktop\OpChat - Master\OPChat - Design\obj\Debug\TestChat.ChatScreen.resources
+C:\Users\a41725\Desktop\OpChat - Master\OPChat - Design\obj\Debug\OPChat___Design.ConnectionIssues.resources
+C:\Users\a41725\Desktop\OpChat - Master\OPChat - Design\obj\Debug\OPChat___Design.contact.resources
+C:\Users\a41725\Desktop\OpChat - Master\OPChat - Design\obj\Debug\OPChat___Design.login.resources
+C:\Users\a41725\Desktop\OpChat - Master\OPChat - Design\obj\Debug\OPChat___Design.friendPanel.resources
+C:\Users\a41725\Desktop\OpChat - Master\OPChat - Design\obj\Debug\OPChat___Design.FriendRequest.resources
+C:\Users\a41725\Desktop\OpChat - Master\OPChat - Design\obj\Debug\OPChat___Design.Properties.Resources.resources
+C:\Users\a41725\Desktop\OpChat - Master\OPChat - Design\obj\Debug\OPChat___Design.screen.resources
+C:\Users\a41725\Desktop\OpChat - Master\OPChat - Design\obj\Debug\OPChat___Design.SuccessfulRegister.resources
+C:\Users\a41725\Desktop\OpChat - Master\OPChat - Design\obj\Debug\OPChat - Design.csproj.GenerateResource.Cache
+C:\Users\a41725\Desktop\OpChat - Master\OPChat - Design\obj\Debug\OPChat - Design.exe.manifest
+C:\Users\a41725\Desktop\OpChat - Master\OPChat - Design\obj\Debug\OPChat - Design.application
+C:\Users\a41725\Desktop\OpChat - Master\OPChat - Design\obj\Debug\OPChat - Design.exe
+C:\Users\a41725\Desktop\OpChat - Master\OPChat - Design\obj\Debug\OPChat - Design.pdb
+C:\Users\Rafa\source\repos\OpChat - Master 2.0\OPChat - Design\bin\Debug\OPChat - Design.exe.config
+C:\Users\Rafa\source\repos\OpChat - Master 2.0\OPChat - Design\bin\Debug\OPChat - Design.exe.manifest
+C:\Users\Rafa\source\repos\OpChat - Master 2.0\OPChat - Design\bin\Debug\OPChat - Design.application
+C:\Users\Rafa\source\repos\OpChat - Master 2.0\OPChat - Design\bin\Debug\OPChat - Design.exe
+C:\Users\Rafa\source\repos\OpChat - Master 2.0\OPChat - Design\bin\Debug\OPChat - Design.pdb
+C:\Users\Rafa\source\repos\OpChat - Master 2.0\OPChat - Design\bin\Debug\Animator.dll
+C:\Users\Rafa\source\repos\OpChat - Master 2.0\OPChat - Design\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\Rafa\source\repos\OpChat - Master 2.0\OPChat - Design\obj\Debug\OPChat - Design.csprojResolveAssemblyReference.cache
+C:\Users\Rafa\source\repos\OpChat - Master 2.0\OPChat - Design\obj\Debug\OPChat___Design.Alert.resources
+C:\Users\Rafa\source\repos\OpChat - Master 2.0\OPChat - Design\obj\Debug\TestChat.bubble.resources
+C:\Users\Rafa\source\repos\OpChat - Master 2.0\OPChat - Design\obj\Debug\TestChat.chatbox2.resources
+C:\Users\Rafa\source\repos\OpChat - Master 2.0\OPChat - Design\obj\Debug\TestChat.ChatScreen.resources
+C:\Users\Rafa\source\repos\OpChat - Master 2.0\OPChat - Design\obj\Debug\OPChat___Design.ConnectionIssues.resources
+C:\Users\Rafa\source\repos\OpChat - Master 2.0\OPChat - Design\obj\Debug\OPChat___Design.contact.resources
+C:\Users\Rafa\source\repos\OpChat - Master 2.0\OPChat - Design\obj\Debug\OPChat___Design.login.resources
+C:\Users\Rafa\source\repos\OpChat - Master 2.0\OPChat - Design\obj\Debug\OPChat___Design.friendPanel.resources
+C:\Users\Rafa\source\repos\OpChat - Master 2.0\OPChat - Design\obj\Debug\OPChat___Design.FriendRequest.resources
+C:\Users\Rafa\source\repos\OpChat - Master 2.0\OPChat - Design\obj\Debug\OPChat___Design.Properties.Resources.resources
+C:\Users\Rafa\source\repos\OpChat - Master 2.0\OPChat - Design\obj\Debug\OPChat___Design.screen.resources
+C:\Users\Rafa\source\repos\OpChat - Master 2.0\OPChat - Design\obj\Debug\OPChat___Design.SuccessfulRegister.resources
+C:\Users\Rafa\source\repos\OpChat - Master 2.0\OPChat - Design\obj\Debug\OPChat - Design.csproj.GenerateResource.Cache
+C:\Users\Rafa\source\repos\OpChat - Master 2.0\OPChat - Design\obj\Debug\OPChat - Design.csproj.CoreCompileInputs.cache
+C:\Users\Rafa\source\repos\OpChat - Master 2.0\OPChat - Design\obj\Debug\OPChat - Design.exe.manifest
+C:\Users\Rafa\source\repos\OpChat - Master 2.0\OPChat - Design\obj\Debug\OPChat - Design.application
+C:\Users\Rafa\source\repos\OpChat - Master 2.0\OPChat - Design\obj\Debug\OPChat - Design.exe
+C:\Users\Rafa\source\repos\OpChat - Master 2.0\OPChat - Design\obj\Debug\OPChat - Design.pdb
+C:\Users\Rafa\source\repos\OpChat - Master 3.0\OPChat - Design\bin\Debug\OPChat - Design.exe.config
+C:\Users\Rafa\source\repos\OpChat - Master 3.0\OPChat - Design\bin\Debug\OPChat - Design.exe.manifest
+C:\Users\Rafa\source\repos\OpChat - Master 3.0\OPChat - Design\bin\Debug\OPChat - Design.application
+C:\Users\Rafa\source\repos\OpChat - Master 3.0\OPChat - Design\bin\Debug\OPChat - Design.exe
+C:\Users\Rafa\source\repos\OpChat - Master 3.0\OPChat - Design\bin\Debug\OPChat - Design.pdb
+C:\Users\Rafa\source\repos\OpChat - Master 3.0\OPChat - Design\bin\Debug\Animator.dll
+C:\Users\Rafa\source\repos\OpChat - Master 3.0\OPChat - Design\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\Rafa\source\repos\OpChat - Master 3.0\OPChat - Design\obj\Debug\OPChat - Design.csprojResolveAssemblyReference.cache
+C:\Users\Rafa\source\repos\OpChat - Master 3.0\OPChat - Design\obj\Debug\OPChat___Design.Alert.resources
+C:\Users\Rafa\source\repos\OpChat - Master 3.0\OPChat - Design\obj\Debug\TestChat.bubble.resources
+C:\Users\Rafa\source\repos\OpChat - Master 3.0\OPChat - Design\obj\Debug\TestChat.chatbox2.resources
+C:\Users\Rafa\source\repos\OpChat - Master 3.0\OPChat - Design\obj\Debug\TestChat.ChatScreen.resources
+C:\Users\Rafa\source\repos\OpChat - Master 3.0\OPChat - Design\obj\Debug\OPChat___Design.ConnectionIssues.resources
+C:\Users\Rafa\source\repos\OpChat - Master 3.0\OPChat - Design\obj\Debug\OPChat___Design.contact.resources
+C:\Users\Rafa\source\repos\OpChat - Master 3.0\OPChat - Design\obj\Debug\OPChat___Design.login.resources
+C:\Users\Rafa\source\repos\OpChat - Master 3.0\OPChat - Design\obj\Debug\OPChat___Design.friendPanel.resources
+C:\Users\Rafa\source\repos\OpChat - Master 3.0\OPChat - Design\obj\Debug\OPChat___Design.FriendRequest.resources
+C:\Users\Rafa\source\repos\OpChat - Master 3.0\OPChat - Design\obj\Debug\OPChat___Design.Properties.Resources.resources
+C:\Users\Rafa\source\repos\OpChat - Master 3.0\OPChat - Design\obj\Debug\OPChat___Design.screen.resources
+C:\Users\Rafa\source\repos\OpChat - Master 3.0\OPChat - Design\obj\Debug\OPChat___Design.SuccessfulRegister.resources
+C:\Users\Rafa\source\repos\OpChat - Master 3.0\OPChat - Design\obj\Debug\OPChat - Design.csproj.GenerateResource.Cache
+C:\Users\Rafa\source\repos\OpChat - Master 3.0\OPChat - Design\obj\Debug\OPChat - Design.csproj.CoreCompileInputs.cache
+C:\Users\Rafa\source\repos\OpChat - Master 3.0\OPChat - Design\obj\Debug\OPChat - Design.exe.manifest
+C:\Users\Rafa\source\repos\OpChat - Master 3.0\OPChat - Design\obj\Debug\OPChat - Design.application
+C:\Users\Rafa\source\repos\OpChat - Master 3.0\OPChat - Design\obj\Debug\OPChat - Design.exe
+C:\Users\Rafa\source\repos\OpChat - Master 3.0\OPChat - Design\obj\Debug\OPChat - Design.pdb
+C:\Users\Utilizador\Desktop\OpChat - Master 5.0\OPChat - Design\bin\Debug\OPChat - Design.exe.config
+C:\Users\Utilizador\Desktop\OpChat - Master 5.0\OPChat - Design\bin\Debug\OPChat - Design.exe.manifest
+C:\Users\Utilizador\Desktop\OpChat - Master 5.0\OPChat - Design\bin\Debug\OPChat - Design.application
+C:\Users\Utilizador\Desktop\OpChat - Master 5.0\OPChat - Design\bin\Debug\OPChat - Design.exe
+C:\Users\Utilizador\Desktop\OpChat - Master 5.0\OPChat - Design\bin\Debug\OPChat - Design.pdb
+C:\Users\Utilizador\Desktop\OpChat - Master 5.0\OPChat - Design\obj\Debug\OPChat - Design.csprojResolveAssemblyReference.cache
+C:\Users\Utilizador\Desktop\OpChat - Master 5.0\OPChat - Design\obj\Debug\OPChat___Design.Alert.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 5.0\OPChat - Design\obj\Debug\TestChat.bubble.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 5.0\OPChat - Design\obj\Debug\TestChat.chatbox2.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 5.0\OPChat - Design\obj\Debug\TestChat.ChatScreen.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 5.0\OPChat - Design\obj\Debug\OPChat___Design.ConnectionIssues.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 5.0\OPChat - Design\obj\Debug\OPChat___Design.contact.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 5.0\OPChat - Design\obj\Debug\OPChat___Design.login.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 5.0\OPChat - Design\obj\Debug\OPChat___Design.friendPanel.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 5.0\OPChat - Design\obj\Debug\OPChat___Design.FriendRequest.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 5.0\OPChat - Design\obj\Debug\OPChat___Design.Properties.Resources.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 5.0\OPChat - Design\obj\Debug\OPChat___Design.screen.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 5.0\OPChat - Design\obj\Debug\OPChat___Design.SuccessfulRegister.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 5.0\OPChat - Design\obj\Debug\OPChat - Design.csproj.GenerateResource.Cache
+C:\Users\Utilizador\Desktop\OpChat - Master 5.0\OPChat - Design\obj\Debug\OPChat - Design.csproj.CoreCompileInputs.cache
+C:\Users\Utilizador\Desktop\OpChat - Master 5.0\OPChat - Design\obj\Debug\OPChat - Design.exe.manifest
+C:\Users\Utilizador\Desktop\OpChat - Master 5.0\OPChat - Design\obj\Debug\OPChat - Design.application
+C:\Users\Utilizador\Desktop\OpChat - Master 5.0\OPChat - Design\obj\Debug\OPChat - Design.exe
+C:\Users\Utilizador\Desktop\OpChat - Master 5.0\OPChat - Design\obj\Debug\OPChat - Design.pdb
+C:\Users\Utilizador\Desktop\OpChat - Master 6.0\OPChat - Design\bin\Debug\OPChat - Design.exe.config
+C:\Users\Utilizador\Desktop\OpChat - Master 6.0\OPChat - Design\bin\Debug\OPChat - Design.exe.manifest
+C:\Users\Utilizador\Desktop\OpChat - Master 6.0\OPChat - Design\bin\Debug\OPChat - Design.application
+C:\Users\Utilizador\Desktop\OpChat - Master 6.0\OPChat - Design\bin\Debug\OPChat - Design.exe
+C:\Users\Utilizador\Desktop\OpChat - Master 6.0\OPChat - Design\bin\Debug\OPChat - Design.pdb
+C:\Users\Utilizador\Desktop\OpChat - Master 6.0\OPChat - Design\obj\Debug\OPChat - Design.csprojResolveAssemblyReference.cache
+C:\Users\Utilizador\Desktop\OpChat - Master 6.0\OPChat - Design\obj\Debug\OPChat___Design.Alert.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 6.0\OPChat - Design\obj\Debug\TestChat.bubble.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 6.0\OPChat - Design\obj\Debug\TestChat.chatbox2.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 6.0\OPChat - Design\obj\Debug\TestChat.ChatScreen.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 6.0\OPChat - Design\obj\Debug\OPChat___Design.ConnectionIssues.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 6.0\OPChat - Design\obj\Debug\OPChat___Design.contact.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 6.0\OPChat - Design\obj\Debug\OPChat___Design.login.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 6.0\OPChat - Design\obj\Debug\OPChat___Design.friendPanel.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 6.0\OPChat - Design\obj\Debug\OPChat___Design.FriendRequest.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 6.0\OPChat - Design\obj\Debug\OPChat___Design.Properties.Resources.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 6.0\OPChat - Design\obj\Debug\OPChat___Design.screen.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 6.0\OPChat - Design\obj\Debug\OPChat___Design.SuccessfulRegister.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 6.0\OPChat - Design\obj\Debug\OPChat - Design.csproj.GenerateResource.Cache
+C:\Users\Utilizador\Desktop\OpChat - Master 6.0\OPChat - Design\obj\Debug\OPChat - Design.csproj.CoreCompileInputs.cache
+C:\Users\Utilizador\Desktop\OpChat - Master 6.0\OPChat - Design\obj\Debug\OPChat - Design.exe.manifest
+C:\Users\Utilizador\Desktop\OpChat - Master 6.0\OPChat - Design\obj\Debug\OPChat - Design.application
+C:\Users\Utilizador\Desktop\OpChat - Master 6.0\OPChat - Design\obj\Debug\OPChat - Design.exe
+C:\Users\Utilizador\Desktop\OpChat - Master 6.0\OPChat - Design\obj\Debug\OPChat - Design.pdb
+C:\Users\Utilizador\Desktop\OpChat - Master 6.0\OPChat - Design\obj\Debug\OPChat___Design.msgMenu.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 7.0\OPChat - Design\bin\Debug\OPChat - Design.exe.config
+C:\Users\Utilizador\Desktop\OpChat - Master 7.0\OPChat - Design\bin\Debug\OPChat - Design.exe.manifest
+C:\Users\Utilizador\Desktop\OpChat - Master 7.0\OPChat - Design\bin\Debug\OPChat - Design.application
+C:\Users\Utilizador\Desktop\OpChat - Master 7.0\OPChat - Design\bin\Debug\OPChat - Design.exe
+C:\Users\Utilizador\Desktop\OpChat - Master 7.0\OPChat - Design\bin\Debug\OPChat - Design.pdb
+C:\Users\Utilizador\Desktop\OpChat - Master 7.0\OPChat - Design\obj\Debug\OPChat - Design.csprojResolveAssemblyReference.cache
+C:\Users\Utilizador\Desktop\OpChat - Master 7.0\OPChat - Design\obj\Debug\OPChat___Design.Alert.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 7.0\OPChat - Design\obj\Debug\TestChat.bubble.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 7.0\OPChat - Design\obj\Debug\TestChat.chatbox2.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 7.0\OPChat - Design\obj\Debug\TestChat.ChatScreen.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 7.0\OPChat - Design\obj\Debug\OPChat___Design.ConnectionIssues.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 7.0\OPChat - Design\obj\Debug\OPChat___Design.contact.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 7.0\OPChat - Design\obj\Debug\OPChat___Design.login.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 7.0\OPChat - Design\obj\Debug\OPChat___Design.friendPanel.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 7.0\OPChat - Design\obj\Debug\OPChat___Design.FriendRequest.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 7.0\OPChat - Design\obj\Debug\OPChat___Design.msgMenu.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 7.0\OPChat - Design\obj\Debug\OPChat___Design.Properties.Resources.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 7.0\OPChat - Design\obj\Debug\OPChat___Design.screen.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 7.0\OPChat - Design\obj\Debug\OPChat___Design.SuccessfulRegister.resources
+C:\Users\Utilizador\Desktop\OpChat - Master 7.0\OPChat - Design\obj\Debug\OPChat - Design.csproj.GenerateResource.Cache
+C:\Users\Utilizador\Desktop\OpChat - Master 7.0\OPChat - Design\obj\Debug\OPChat - Design.csproj.CoreCompileInputs.cache
+C:\Users\Utilizador\Desktop\OpChat - Master 7.0\OPChat - Design\obj\Debug\OPChat - Design.exe.manifest
+C:\Users\Utilizador\Desktop\OpChat - Master 7.0\OPChat - Design\obj\Debug\OPChat - Design.application
+C:\Users\Utilizador\Desktop\OpChat - Master 7.0\OPChat - Design\obj\Debug\OPChat - Design.exe
+C:\Users\Utilizador\Desktop\OpChat - Master 7.0\OPChat - Design\obj\Debug\OPChat - Design.pdb
